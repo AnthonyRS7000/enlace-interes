@@ -1,0 +1,3786 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head><link href="../App_Themes/Tema1/StyleSearch.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/Tema1/StyleSheet.css" type="text/css" rel="stylesheet" /><meta charset="UTF-8" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V4ESNG1Y68"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-V4ESNG1Y68');
+    </script>
+    <script language="javascript" type="text/javascript">
+	<!--
+	function OnClickTab(tb)
+	{
+		var params = GetUrlParams();
+		window.parent.location = "default.aspx?tb=" + tb + params;
+	}	
+
+	function OnSubmit()
+	{
+		if (onSubmitValid)
+			return true;
+		else
+		{
+			onSubmitValid = true;
+			return false;
+		}
+	}
+	//-->
+	</script>
+    <style>
+        html
+{
+	height: 100%;
+	left: 0px;
+	right: 0px;
+}
+
+body
+{
+	font-weight: normal;
+	font-size: 0.7em;
+	word-spacing: normal;
+	text-transform: none;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	letter-spacing: normal;
+	background-color: #f7f7f7;
+	padding: 0;
+	margin: 0;	
+	height: 100%;
+	left: 0px;
+	right: 0px;
+	border: 0px;
+}
+
+a	
+{	
+	text-decoration:	none;
+	color:	#3333cc;
+}	
+
+a:hover	
+{	
+	text-decoration:	underline;
+	color:	#3333cc;
+}
+
+a.txt
+{
+    color: #4e6298;
+}
+
+a.txt:hover
+{
+    color: #4e6298;
+}
+
+
+select
+{
+    font-size: 8pt;
+}
+
+img.Tip
+{
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+p
+{
+    margin-top: .8em;
+}
+
+/* Header1 de la página */
+#pg_hd1
+{
+    background-color: #ffffff;
+    border-bottom: solid 1px #dddddd;
+}
+/* Header1 de la página - Fin */
+
+
+/* Header2 de la página */
+#pg_hd2
+{
+}
+/* Header2 de la página - Fin */
+
+/* Cuerpo de la página */
+#pg_bd
+{
+    margin: 2px;
+}
+/* Cuerpo de la página - Fin */
+
+/* Pie de la página */
+#pg_ft
+{
+}
+/* Pie de la página - Fin */
+
+.Button
+{
+    border-width: 1px;
+    font-size: 8pt;
+    font-family: Arial;
+    height: 22px;
+    width: 80px;
+}
+
+/* Panel de los botones de navegación */
+.DimButtons
+{
+    border: solid 1px #dddddd;
+    background-color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.DimButtons .Button
+{
+	padding: 1px;
+	background-color: #fff5d4; 
+}
+
+.DimButtons table
+{
+    border-width: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.DimButtons td
+{
+    white-space: nowrap;
+    height: 22px;
+	width: 17%;
+	padding-right: 1px;
+	padding-left: 1px;
+	border-left: #cccccc 1px solid;
+	border-right: #cccccc 1px solid;
+}
+/* Panel de los botones de navegación - Fin */
+
+/* Popup de los botones de navegación*/
+.PopupDimBtn
+{
+    background-color: #ffffff;
+    border-right: #d7daee 1px solid;
+    border-top: #d7daee 1px solid;
+    border-left: #d7daee 1px solid;
+    border-bottom: #d7daee 1px solid;
+    padding: 5px;
+    visibility: hidden;    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: auto;
+    width: 230px;
+}
+
+.PopupDimBtn .hd
+{
+    font-weight: bold;    
+    color: #d56633;
+    border: solid 0px #000000;
+    margin: 2px 0 2px 0;
+}
+
+.PopupDimBtn .bd
+{
+    margin: 2px 0 2px 0;
+    border: solid 0px #000000;    
+}
+
+.PopupDimBtn .ft
+{
+    margin: 2px 0 2px 0;
+    color: #888888;
+}
+
+.PopupDimBtn a
+{
+    color: #869ac2;
+}
+
+.PopupDimBtn a:hover
+{
+    color: #869ac2;
+}
+/* Popup de los botones de navegación - Fin */
+
+/* Popup de los tips */
+.PopupTip
+{
+    border: solid 1px #d7daee;    
+    background: #ffffff url("../../Images/tiny_indicator.gif") no-repeat 6px 8px;
+    visibility: hidden;
+    width: 230px;
+    height: auto;
+    padding: 6px;
+    min-height: 12px;
+}
+
+.PopupDynaTip
+{
+    width: 100%;
+    height: 100%;   
+    background: #ffffff;
+}
+
+.PopupDynaTip .hd
+{
+    font-weight: bold;    
+    color: #d56633;
+    border: solid 0px #000000;
+    margin: 2px 0 2px 0;
+}
+
+.PopupDynaTip .bd
+{
+    margin: 2px 0 2px 0;
+    border: solid 0px #000000;    
+}
+/* Popup de los tips - Fin */
+
+/* Tabs Principales */
+.TabStrip
+{
+    border-collapse: collapse;
+}
+
+.TabBorder
+{
+    border-color: #000000;
+    border-style: solid;
+}
+
+.TabOn
+{
+    background-color: #89a0ed;
+    color: #ffffff;
+    font-weight: bold;
+    border-width: 1px;
+    border-bottom-color: #89a0ed;
+}
+
+.TabOff
+{
+    border-width: 0px;
+    border-bottom-width: 1px;    
+}
+
+.Separator
+{
+    border-width: 0px;
+    border-bottom-width: 1px;
+}
+
+.Margin
+{
+    border-width: 0px;
+    border-bottom-width: 1px;
+}
+
+
+/* Tabs Principales - Fin */
+
+/* Toolbar */
+.ToolBar
+{
+    background-color: #ebf3fb;
+    color: #000000;    
+    border: solid 1px #89a0ed;
+    border-bottom-color: #cccccc;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+    border-top-width: 5px;
+    width: auto;
+    height: 23px;
+}
+
+.ToolBar table
+{
+    width: 100%;
+    border-width: 0px;    
+    border-collapse: collapse;
+}
+
+.ToolBar table td
+{
+    padding: 2px;
+    white-space: nowrap;
+}
+
+.ToolBar td#lft
+{
+    text-align: left;
+}
+
+.ToolBar td#rgt
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.ToolBarBtn
+{
+    
+    cursor: pointer;
+    padding: 1px 2px 1px 2px;
+    text-decoration: none;
+    vertical-align: bottom;   
+    border: solid 1px #ebf3fb;
+}
+
+.ToolBarBtn:hover
+{
+    text-decoration: none;  
+}
+
+
+/* Toolbar - Fin */
+
+/* Panel Historial */
+#PnlHistory
+{    
+    background-color: #ffffff;
+}
+
+#PnlHistory td div
+{
+    display: inline;
+}
+
+.History
+{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #e1e8f8;
+    border: solid 1px #dddddd;
+}
+
+.History tr
+{
+    height: 20px;
+}
+
+.History tr.alt
+{
+    background-color: #f3f3f5;
+}
+
+.History td
+{
+    border-left: solid 1px #dddddd;
+    border-right: solid 1px #dddddd;
+}
+/* Panel Historial - Fin */
+
+/* Panel Datos */
+#PnlData
+{
+    background-color: #ffffff;
+}
+
+.MapTable
+{
+    background-color: #3a6ea5;
+    color: #ffffff;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.MapTable tr
+{
+    height: 21px;
+}
+
+.MapTable td
+{
+    border: solid 1px #dddddd;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Data
+{    
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 0px;
+}
+
+.Data tr
+{
+    cursor: pointer;    
+    height: 22px;
+    text-align: right;
+}
+
+.Data tr.alt
+{
+}
+
+.Data tr.More
+{
+    text-align: left;
+    height: auto;
+    background-color: #f1f1f1;    
+}
+
+.Data tr.More td
+{
+    padding-left: 4px;
+}
+
+.Data td
+{
+    border: solid 1px #dddddd;
+}
+/* Panel Datos - Fin */
+
+
+/* Panel de Búsqueda */
+.PnlSearch
+{
+    /*    background-color: #3a6ea5;*/ /*    background-color: #b3735c;*/
+    padding: 2px;
+    border: solid 1px #dddddd;
+    background-color: #ebf3fb;
+    color: #000000;
+}
+
+.PnlSearch input
+{
+    font-size: 8pt;
+    border: solid 1px #7f9db9;
+    background-color: #ffffff;
+}
+
+.PnlSearch a
+{    
+}
+
+.PnlSearch a:hover
+{        
+}
+
+.PnlSearch a.Search
+{
+    font-weight: bold;    
+}
+
+.PnlSearch a.Search:hover
+{
+    font-weight: bold;
+}
+
+.PnlSearch a.Reset
+{
+    font-weight: bold;
+    color: #f14400;
+}
+
+.PnlSearch a.Reset:hover
+{
+    font-weight: bold;
+    color: #f14400;
+}
+/* Panel de Búsqueda - Fin */
+
+/* Panel de Paging */
+.PnlPaging
+{
+	padding: 1px;
+	border: solid 1px #f7f7f7;
+	background-color: #f7f7f7;
+	color: #000000;
+}
+
+.PnlPaging .Button
+{
+	border: solid 1px #7f9db9;
+	background-color: #bbcefd;
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: center;	
+	width: 24px;
+	height: 18px;
+}
+
+.PnlPaging input
+{
+	text-align: right;
+   height: 12px;
+}
+/* Panel de Paging - Fin */
+
+/* Panel Notas */
+.PnlNotes
+{
+    background-color: #ffffff;
+    margin-top: 10px;
+    padding: 5px;
+    border: solid 1px #d7daee;   
+}
+
+.PnlNotes .hd
+{
+    margin: 0;
+    border: solid 0px #000000;
+    color: #d56633;
+    font-weight: bold;
+    font-size: 10pt;
+    background-color: #fff8eb;
+    padding: 2px;
+}
+
+.PnlNotes .bd
+{
+    margin: 5px 0 0 0;
+    border: solid 0px #000000;    
+}
+
+.PnlNotes .ft
+{
+    margin: 5px 0 0 0;
+    border: solid 0px #000000;   
+    color: #888888;
+}
+
+.PnlNotes a
+{
+    color: #869ac2;
+}
+
+.PnlNotes a:hover
+{
+    color: #869ac2;
+}
+
+.PnlNotes ul
+{
+    margin: 0;    
+    padding-left: 0;
+}
+
+.PnlNotes li
+{
+    list-style-type: none;    
+    margin: 0;    
+    background: url(../../Images/bullet_gray.gif) 1px 0.5em no-repeat;
+    padding-left: 10px;    
+}
+
+/* Panel Notas - Fin */
+
+/* Panel No Data - Fin */
+.PnlNoData
+{
+    margin: 5px 0 5px 0;
+    border: solid 0px #000000; 
+}
+/* Panel No Data - Fin */
+
+/* Estilos de la lista de Reportes */
+#RptContent
+{
+    padding: 10px 20px;
+}
+
+.RptItem
+{
+    background-color: #ffffff;
+    border-right: #d7daee 1px solid;
+    border-top: #d7daee 1px solid;
+    border-left: #d7daee 1px solid;
+    border-bottom: #d7daee 1px solid;
+    padding: 7px;    
+    height: auto;
+    margin: 12px 0;
+}
+
+.RptItem .hd
+{
+    font-weight: bold;
+    font-size: 10pt;
+    color: #d56633;
+    border: solid 0px #000000;
+    margin: 5px 0 5px 0;
+}
+
+.RptItem .bd
+{
+    margin: 5px 0 5px 0;
+    border: solid 0px #000000;    
+}
+
+.RptItem .ft
+{
+    margin: 5px 0 5px 0;
+    color: #888888;
+    border: solid 0px #000000;
+}
+
+.RptItem a
+{
+    color: #869ac2;
+}
+
+.RptItem a:hover
+{
+    color: #869ac2;
+}
+
+/* Estilos de la lista de Reportes - Fin */
+
+/* Estilos de la Pag. de Presentación del Reporte */
+
+#RptSummary
+{    
+    height: auto;
+    margin: 15px 0;
+}
+
+#RptSummary .hd
+{
+    font-weight: bold;
+    font-size: 11pt;
+    color: #d56633;
+    border: solid 0px #000000;
+    margin: 5px 0 5px 0;
+}
+
+.RptCtrl
+{
+    border: solid 1px #d7daee;
+    padding: 5px;
+    color: #000000;
+    background-color: #ebf3fb;
+}
+
+.RptCtrl .hd
+{
+    margin: 3px 0 3px 0;
+    font-weight: bold;
+    color: #000000;
+}
+
+.RptCtrl .bd
+{
+    margin: 5px 0 5px 0;
+}
+
+.RptCtrl .ft
+{
+    margin: 5px 0 5px 0;
+}
+
+.RptList
+{
+    margin: 10px 0;
+}
+
+.RptList ul
+{
+    margin: 0;    
+    padding-left: 0;
+}
+
+.RptList li
+{
+    list-style-type: none;    
+    margin: .5em 0;    
+    background: url(../../Images/bullet_gray.gif) 1px 0.5em no-repeat;
+    padding-left: 10px;    
+}
+
+/* Estilos de la Pag. de Presentación del Reporte - Fin */
+
+
+/* Estilos de la Pag. de Presentación de la Exportación a Excel Diario */
+
+#RptSummaryDiario {
+    height: auto;
+    margin: 15px 0;
+}
+
+    #RptSummaryDiario .hd {
+        font-weight: bold;
+        font-size: 12pt;
+        color: #d56633;
+        border: solid 0px #000000;
+        margin: 5px 0 5px 0;
+    }
+
+    #RptSummaryDiario .bd {        
+        font-size: 10pt;      
+    }
+
+.RptCtrlDiario {
+    border: solid 1px #d7daee;
+    padding: 5px;
+    color: #000000;
+    background-color: #ebf3fb;
+}
+
+    .RptCtrlDiario .hd {
+        margin: 3px 0 3px 0;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .RptCtrlDiario .bd {
+        margin: 5px 0 5px 0;
+    }
+
+    .RptCtrl .ft {
+        margin: 5px 0 5px 0;
+    }
+
+.RptListDiario {
+    margin: 10px 0;
+}
+
+    .RptListDiario ul {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .RptListDiario li {
+        list-style-type: none;
+        margin: .5em 0;
+        background: url(../../Images/bullet_gray.gif) 1px 0.5em no-repeat;
+        padding-left: 10px;
+    }
+    .tdTit
+{
+	background-color:#ebf3fb;
+	height:25px;
+}
+.tdTitEsp
+{
+	background-color:#ebf3fb;
+	height:25px;
+	width:50px;
+}
+.tdDet
+{
+	background-color:#ffffff;	
+}
+.tdDetEsp
+{
+	background-color:#ffffff;
+	width:50px;	
+}	
+.Button
+{
+    border-top-width: 1px;
+	border-left-width: 1px;
+	font-size: 8pt;
+	border-bottom-width: 1px;
+	width: 80px;
+	font-family: Arial;
+	height: 22px;
+	background-color: #fff5d4;
+	border-right-width: 1px;    
+}	
+
+.tdHeaderg
+{
+	background-color:#E1E8F8;
+	}
+
+/* Formato - Grid */
+
+.gHeader
+{
+	background-color: #3a6ea5;	
+}
+
+.gFooter
+{
+	background-color: #E1E8F8;		
+}
+
+.gPageStyle
+{
+	background-color: #fff5d4;
+	text-align:right;
+		right:auto;
+}
+
+.gAlterRow
+{
+	background-color:#ffffff;
+}
+.RptItem
+{
+    background-color: #ffffff;
+    border-right: #d7daee 1px solid;
+    border-top: #d7daee 1px solid;
+    border-left: #d7daee 1px solid;
+    border-bottom: #d7daee 1px solid;
+    padding: 7px;    
+    height: auto;
+    margin: 12px 0;
+}
+
+.RptItem .hd
+{
+    font-weight: bold;
+    font-size: 10pt;
+    color: #d56633;
+    border: solid 0px #000000;
+    margin: 5px 0 5px 0;
+    background-color: #fff8eb;
+}
+
+.RptItem .bd
+{
+    margin: 5px 0 5px 0;
+    border: solid 0px #000000;    
+}
+
+.RptItem .ft
+{
+    margin: 5px 0 5px 0;
+    color: #888888;
+    border: solid 0px #000000;
+}
+
+.RptItem a
+{
+    color: #869ac2;
+}
+
+.RptItem a:hover
+{
+    color: #869ac2;
+}
+/* Estilos de la Pag. de Presentación del Reporte - Fin */
+    </style>
+<title>
+	Consulta Amigable - Navegador
+</title></head>
+<body onload="if (this.OnLoad) OnLoad();">
+    <form method="post" action="Navegar_7.aspx?y=2024&amp;ap=Proyecto" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzNzc5MzE3NzgPFgoeDVNlbGVjdGVkTGV2ZWwLKUlEd2hMZXZlbCwgQXBwX0NvZGUsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsHx4OU2VsZWN0ZWRMZXZlbHMFIjA9JjE9TSYzNz1NJjU9MTAmNj0wMSY3PTMwMTgzNSYzMT0eDE90aGVyRmlsdGVycwUkeT0yMDI0JmFwPVByb3llY3RvJmNwYWdlPTEmcHNpemU9NDAwHghTZWFyY2hCeQspSVNlYXJjaEJ5LCBBcHBfQ29kZSwgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwAHgpTZWFyY2hUZXh0ZRYCZg9kFgICAw9kFgQCBQ88KwAGAQAPFgIeClRhYk9uSW5kZXhmZGQCBw9kFggCAQ9kFgQCBw8QDxYCHgtfIURhdGFCb3VuZGcWAh4Ib25jaGFuZ2UFFU9uQ2hhbmdlRHJwWWVhcih0aGlzKRAVGgQxOTk5BDIwMDAEMjAwMQQyMDAyBDIwMDMEMjAwNAQyMDA1BDIwMDYEMjAwNwQyMDA4BDIwMDkEMjAxMAQyMDExBDIwMTIEMjAxMwQyMDE0BDIwMTUEMjAxNgQyMDE3BDIwMTgEMjAxOQQyMDIwBDIwMjEEMjAyMgQyMDIzBDIwMjQVGgQxOTk5BDIwMDAEMjAwMQQyMDAyBDIwMDMEMjAwNAQyMDA1BDIwMDYEMjAwNwQyMDA4BDIwMDkEMjAxMAQyMDExBDIwMTIEMjAxMwQyMDE0BDIwMTUEMjAxNgQyMDE3BDIwMTgEMjAxOQQyMDIwBDIwMjEEMjAyMgQyMDIzBDIwMjQUKwMaZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIJDxAPZBYCHwcFGE9uQ2hhbmdlRHJwQWN0UHJveSh0aGlzKWRkZAICD2QWEgINDw8WAh4HVmlzaWJsZWhkZAIPDw8WAh8IaGRkAhUPDxYCHwhoZGQCFw8PFgIfCGhkZAIZDw8WAh8IaGRkAhsPDxYCHwhoZGQCHQ8PFgIfCGhkZAIhDw8WAh8IaGRkAiMPDxYCHwhnZGQCBA9kFgJmD2QWBgIBD2QWBGYPZBYKAgIPDxYEHgdDZWxsQXJnBQRjb2wxHgdUb29sVGlwBSVQcmVzdXB1ZXN0byBJbnN0aXR1Y2lvbmFsIGRlIEFwZXJ0dXJhZBYEZg8VAQNQSUFkAgEPZBYCAgEPFgIeDlBvcHVwQ29udHJvbElEBQZQbmxQSUFkAgMPDxYEHwkFBGNvbDIfCgUkUHJlc3VwdWVzdG8gSW5zdGl0dWNpb25hbCBNb2RpZmljYWRvZBYEZg8VAQNQSU1kAgEPZBYCAgEPFgIfCwUGUG5sUElNZAIEDw8WBB8JBQRjb2w4HwpkZBYEZg8VAQ5DZXJ0aWZpY2FjacOzbmQCAQ9kFgICAQ8WAh8LBRBQbmxDZXJ0aWZpY2FjaW9uZAIFDw8WBB8JBQRjb2wzHwpkZBYEZg8VARBDb21wcm9taXNvIEFudWFsZAIBD2QWAgIBDxYCHwsFDFBubENvbXBBbnVhbGQCBw8PFgQfCQUEY29sNx8KZGQWAmYPFQEIQXZhbmNlICVkAgEPZBYGZg8PFgQfCQUEY29sNB8KZGQWAmYPFQEfQXRlbmNpw7NuIGRlIENvbXByb21pc28gTWVuc3VhbGQCAQ8PFgQfCQUEY29sNR8KZGQWAmYPFQEJRGV2ZW5nYWRvZAICDw8WBB8JBQRjb2w2HwpkZBYCZg8VAQZHaXJhZG9kAgMPDxYCHwhnZBYCAgkPDxYCHwhoZGQCBQ8PFgIfCGhkFgICAQ88KwAHAQAPFgYeCFBhZ2VTaXplApADHgtDdXJyZW50UGFnZQIBHglJdGVtQ291bnQCJmRkAgkPDxYCHgRUZXh0BRQxNiBkZSBhYnJpbCBkZSAyMDI0LmRkZBssnCKyGPlp/9SuFsJX+AJqVUFr9mG7+sa0nXAZ9fsF" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/transparencia/WebResource.axd?d=2OjMgI93euOTAx8UU0p5h-xfhaDZpNCFyJz-YWK8LG2iyibJ9SWZRlfTVd-8up0Woi1-sQFfz1WUIN9Lu9MThgCeKNP5Cm8OllMiSv0BPko1&amp;t=635588438558757176" type="text/javascript"></script>
+
+
+<script language="javascript" type="text/javascript">
+<!--
+	function _FormSubmit(command, argument) {
+		var arg = ""
+		 if (command != null) {
+			 arg += command;
+			 if (argument != null) 
+				 arg += '.' + argument;
+		 }
+		__doPostBack('__Page',arg)}
+// -->
+</script>
+
+<script src="/transparencia/ScriptResource.axd?d=DBNzyOhxQn_wJWOr7e4KG9CvIX8PcvYdURL9BWsmhRKx53AbAeGmHfSS1ZDevdC0mSgXmbe42iQKPi9z8LCudXvd6fNhB-InWbXcZyvxr_1rY5ybgkiV6F5IiiF3lVnfkGdgR7FG0re59yUIhLs0f37xxz52kYSXcKPRMIWbmxYoX8ScjNxvzVBhNpeF2Pbn0&amp;t=ffffffff805766b3" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="/transparencia/ScriptResource.axd?d=eh9jf_06iRB2dcRhOL_X5g5Vli5MIkG8uTUtzWkVkOXNoDPjnUWNFS7iTbFpivDZbN85bdN_W8-uTHgela9M5_8C5wWHf15y85XcEgGdhjDQM4WXINPXjkLOFRwXslpAAVjLuRRVOWD0iyVqXxdwRjePq4tL52VxwsQHbYE7CH5GAzYe1dilI0eGvPyrZ4Ku0&amp;t=ffffffff805766b3" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=a6na7sN5w98ZopEJuXhlydSwrgT8vG39JZYYduAfWcaZ9OILpJLQUvPDFCER07dTc5vQhPADYD6eUsWbC8cAl3F3Z0VHPRD8AUnyVVNW4Eq4cf8uiHAjHOu5CBveA37GVsTMprQ9LLp8Eb0wpBlFIG6Khfs34MBtMfk0KGauWNQ1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=EZDiIv6pLE1XvRzF-OlkBYvmmQ24Zdft2oXe6EaDML1xe0i6fFPoDjtKfbVoNO7taZrZXcvCGh2A7_uoZAhnvHcFNrG_ZhS9QNXa5TlbtmBDSjdD6OMoYg0tbYS1PoFw29DBnFht57RoF5QV_gpo_bvng8YCpdwSF4idxnhkrP41&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=40tcUJdFLPtJWHOpmE0ZbkZIxbVhzwUsHPT-xn4Vg9PvUBMrz8YXY0z-H6A1pNkyvSAo8dVVHpICxy09j9nhqJC1_aISFntzNsS9UGiKFH7SDKqJlkKSjgckmH4GBqZTyRECYpuxLaDXhg42vm5CgRxsjv0j8-O_Z4posTTmNSLq7sppM8b2UBXwop-ibS-Q0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=XqZ127bEyPdOh7ycPOmuxULVgtHVUUKsQs-lkd4RsL_Z7pCdxViuDal4Cc0yZ5fynifQq9hFXq82kYYQMbn2cw7-JEqZYkwi34ih-9M5GSMyGO3d4EKkyPZ_8TQ2TCelXTb6c5gunZf7fQNJZtFcprfNR2oLeLlVwoIOPn4DUCo1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=kAU7C5_P7jVZU_aco9JDwpAiAfLmP6JA4Ko1r16l2RCrnaDMbWleUVOm_S4y2xrRanHdVsP88pSeb3LXapoFg7SOG8HppqSFPNG0yyd7r9viwaslDWKQa2urhCAAjO_e0Pf1eZn5T6adp779YDqEsz2iwNY2c2RA3MVHZaubIKk1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=N6CHJJAA6y9QkRJn5-c2msJksPNy7UBwwF4LNGpeeuyB0ZrxQ4unHNDTQS1R65iWpXJ3Izqx1dFRqbXehtQJPIV4w0NAb7IFPrKZ2hp-ixc6zpIHEkkbwOKgIdS5vLliH9UFgUGpZ_Fhf0f6l2x_RLEMd-ya4pWHhAcDaR98KR01&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=1BnuDEX3zORMirQY64la4udKmeI8bD-uloCH3XuEGFe3n2PV6zjgfzu792i6UF5NhFcV74HExP-nBsj8UXI-iCtB2dd9ui8ErXfbSehVIjeSEC9l3cUdCxFq-OkfuG9N4dPkNr03M0wbXbrU1KCJfXu1orDfTSyhojJIEbvkEOY1&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/ScriptResource.axd?d=p7NG-y8d8LuPWHuow9p6k7hbWKwIdig7xjdB6YwRIE0Wv1b8BCUUEx2A6W_BxZpMcpgMm9YFcyiwbJLNSb-kqPsd26AqmwilLHkLImR3PGCsCHKCJOnWm7209ymwnLmsvgKZBZ6xHg2u3HDTdeC_Zpd90z12XJ1m9brgcxMctziJU5bEO9U85Fl42Cvlju6Z0&amp;t=ffffffff8b3ffb57" type="text/javascript"></script>
+<script src="/transparencia/WebResource.axd?d=bjKoBqFM6dYIlzpm0ef14rJpjNVUZsGhHzqDaQxqYSqF7Lv-IGlDmnmai_iU9EZFD1HD0VtQpuBmk0GT1K8zE4d9_RcDR5PTv2-0qEm1h4g1&amp;t=635588438558757176" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdACs7P+/vZxhZjm2KODxundJN5EdtbTHqfmqN1rp7Gf0xZSQ8TBsjUqNP7PZB7LXAwUxi1+RQQgFa7RCJSHKoIh8bkF9q1EGo6Oi6DTPyBDKoS9XLHxff3Ik9aTo789+FO0AfoMvnz7K3WQv+WuErvE5fNiszC6wQ5ste1/jV76Q4VvZqkrjYVtxKRHqCMZl4f7BeXYIGkvHq6nMIHcevvSVm0yWGCmhBUACBaC6uFR2XCotGnxduM3+h9gZS8BdfBruDGU89IQjdPnzsJekPA7z+gdKl+8havS5rYkzEbc/TBS6gPDGQvCN5sy0oun/v6kfQ2NgviJjarn9pF00iIc1+MsIHlJEPXUKjNdahAoyYBXn1il1SYJL8WVTNp+J8jX4StOnUp9Zq98S/oku7tbh82mhqVxaWBTExaoXx0r2v55wqaW3+pi6+Lx2mIaX4x5rngllvizktMYSvEMR8GStg0HD9YELOAQGJQqNt2ku2JdYRAr9ohmWpibcW4TTWMBxO5w7IIe25oKz1c0u0pSYn9EZv2sI13MVDhH84bT3lcJHy2gOBQhUI4vHDJfSeuK0MzBcNzTWmQ3Zp+XD+Bd8gQm9u0fydJbqfx+a8GRjZnPrUnGf5H2N+NUl6ukdGh4CsNmXJPJFmpt/7jWeCFeOOq/ZT/CkIcDhOTABmx0RcRTqaCulKrqFpkKV0gVFzuVt/FAcpJRGDtEFWGVdj0FvrwvpCv7xp79yam0cDGmIesnrRrcVyzgg8ardKZPEOWxR2GKj9QXXR825/jfwVOFm9UfVfTkdJJ1rhHATyLFhEhEDjkjLmbjyzQ7EDjGiKeMVgQp2s9qAofOilj3Sy4hDIIcSHO63TutowULwrRLY/bdDNps2JEk/rt8Vg18RnhB3uaMflGEoWtB0GfB402hzO+iVrgn0ehP7H5Kj6ElrsmpkphJe8bSfs4BrwaapHjDM=" />
+</div>
+        
+<div id="pg_hd1">
+    <table cellpadding="0" cellspacing="0" style="width: 100%; border: solid 0px #000000;
+        border-collapse: collapse;">
+        <tr>
+            <td style="width: 1px; height: 60px;">
+                <a href="http://transparencia-economica.mef.gob.pe/" target="_parent">
+                    <img id="ctl00_Top1_Image1" title="Inicio de Transparencia Económica" src="../Images/logo.gif" alt="Transparencia Económica" style=" display:block; border-color:transparent;" /></a></td>
+            <td style="width: auto; vertical-align: top; height: 60px">
+                <table cellpadding="0" cellspacing="0" style="width: 100%; border-collapse: collapse;
+                    height: 100%; position: relative;">
+                    <tr id="ctl00_Top1_TrLinks" style="height: auto">
+	<td style="font-size: 7pt; white-space: nowrap; width: 7px;">
+                            &nbsp;</td>
+	<td style="font-size: 7pt; color: #9999cc; text-align: right; white-space: nowrap;">
+                            <a href="http://www.mef.gob.pe" style="color: #6666cc" target="_parent">Portal del MEF</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a
+                                href="http://transparencia-economica.mef.gob.pe/" style="color: #6666cc" target="_parent">Portal
+                                de Transparencia Económica</a>&nbsp;</td>
+</tr>
+
+                    <tr>
+                        <td colspan="2" style="height: 65%; white-space: nowrap; text-align: center;">
+                            <b>
+                                <span id="ctl00_Top1_LblTitle" style="font-family:Verdana;font-size:12pt;">Consulta Amigable</span></b><br />
+                            <span id="ctl00_Top1_LblSubTitle" style="font-family:Verdana;font-size:10pt;">Consulta de Ejecución del Gasto</span></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>        
+    </table>
+</div>
+
+        <div id="pg_bd">
+         
+<div id="pg_hd2">
+    <table cellspacing="0" cellpadding="0" style="width: 100%;
+        border-right: 0px solid; border-top: 0px solid; border-left: 0px solid; border-bottom: 0px solid;">
+        <tr style="height: 20px;">
+            <td style="font-size: 8pt; white-space: nowrap; padding-right: 2px;">
+                &nbsp;</td>
+            
+            <td style="font-size: 8pt; white-space: nowrap; padding-left: 2px;" align="right">
+                miércoles, 17 de abril del 2024</td>
+        </tr>        
+    </table>
+</div>
+
+            <table cellspacing="0" cellpadding="0" id="ctl00_SectionsTab" class="TabStrip">
+	<tr style="height:3px;">
+		<td colspan="6"></td>
+	</tr><tr style="height:21px;">
+		<td class="TabBorder Margin">&nbsp;</td><td class="TabBorder TabOn" title="Herramienta de navegación y consulta" style="font-weight:bold;white-space:nowrap;">&nbsp;<img src="../Images/cube.gif" alt="" style="vertical-align:middle;" />&nbsp;Navegador&nbsp;</td><td class="TabBorder TabOff" onclick="window.parent.location = &#39;../Buscador/Default.aspx&#39;;" style="white-space:nowrap;cursor:pointer;">&nbsp;<img src="../Images/buscar.gif" alt="" style="vertical-align:middle;border:0;" />&nbsp;Buscador&nbsp;</td><td class="TabBorder TabOff" onclick="window.parent.location = &#39;../Reportes/Default.aspx&#39;;" style="white-space:nowrap;cursor:pointer;">&nbsp;<img src="../Images/report.gif" alt="" style="vertical-align:middle;border:0;" />&nbsp;Reportes&nbsp;</td><td class="TabBorder TabOff" onclick="window.parent.location = &#39;../DescargaDiario.aspx&#39;;" style="white-space:nowrap;cursor:pointer;">&nbsp;<img src="../Images/download.gif" alt="" style="vertical-align:middle;border:0;" />&nbsp;Descargas&nbsp;</td><td width="100%" class="TabBorder Margin">&nbsp;</td>
+	</tr>
+</table>        
+            
+    <script language="javascript" type="text/javascript">
+    <!--
+    var ie4 = ((navigator.userAgent.indexOf("MSIE") != -1) &&
+        (parseInt(navigator.appVersion) >= 4))
+    var nav5 = ((navigator.appName == "Netscape") && (parseInt(navigator.appVersion) > 4))
+    var frm = null;
+    var onSubmitValid = true;
+    var selectedRow = null;
+    var selectedRowIndex = null;
+    var rowCount = null;
+    var kCod = null;
+    var ano = null;
+    var actProy = null;
+
+    var exportUrl = null;
+    var graphicUrl = null;
+
+    function OnLoad() {
+        frm = document.forms[0];
+        if (!frm)
+            frm = document.forms(0);
+        ano = "2024";
+        actProy = "Proyecto";
+        rowCount = "38";
+        selectedRowIndex = -1;
+        SetActiveRow(selectedRowIndex, null);
+        OnSelectedRowChanged();
+        exportUrl = "Navegar_7.aspx?_tgt=xls&_uhc=yes&0=&1=M&37=M&5=10&6=01&7=301835&31=&y=2024&ap=Proyecto&cpage=1&psize=400";
+        graphicUrl = "http://appsdesa01.mef.gob.pe/transparenciagraficos/Main.aspx?_uhc=yes&0=&1=M&37=M&5=10&6=01&7=301835&31=&y=2024&ap=Proyecto&cpage=1&psize=400";
+    }
+
+    function OnClickButton() {
+        if (!IsRowSelected()) {
+            onSubmitValid = false;
+            alert("Tiene que hacer una selección.");
+        }
+        else {
+            if (document.getElementById) {
+                document.getElementById("DivContent").style.display = "none";
+                document.getElementById("DivProgress").style.display = "";
+            }
+        }
+    }
+
+    function SetActiveRow(index, row) {
+        if (isNaN(parseInt(index)))
+            return;
+        if (index < 0) {
+            if (selectedRowIndex >= 0) {
+                if (frm.grp1.length)
+                    frm.grp1[selectedRowIndex].checked = false;
+                else
+                    frm.grp1.checked = false;
+            }
+            selectedRowIndex = -1;
+            if (selectedRow != null)
+                selectedRow.style.backgroundColor = "#ffffff";
+            selectedRow = null;
+        }
+        else {
+            if (index < rowCount) {
+                selectedRowIndex = index;
+
+                if (frm.grp1.length) {
+                    frm.grp1[index].checked = true;
+                    frm.grp1[index].focus();
+                }
+                else
+                    frm.grp1.checked = true;
+
+                if (selectedRow != null)
+                    selectedRow.style.backgroundColor = "#ffffff";
+                if (row != null)
+                    selectedRow = row;
+                else
+                    if (ie4 || nav5)
+                        selectedRow = document.getElementById("tr" + index);
+                if (selectedRow != null)
+                    selectedRow.style.backgroundColor = "#fddd80";
+            }
+        }
+    }
+
+    function IsRowSelected() {
+        if (rowCount == 1) {
+            if (frm.grp1)
+                frm.grp1.checked = true;
+            return true;
+        }
+        else {
+            if (selectedRowIndex >= 0)
+                return true;
+            else
+                return false;
+        }
+    }
+
+    function GoUpTo(n) {
+        if (document.getElementById) {
+            document.getElementById("DivContent").style.display = "none";
+            document.getElementById("DivProgress").style.display = "";
+        }
+        SubmitForm("GoUpTo", n);
+    }
+
+    function tr_clk(index, row) {
+        SetActiveRow(index, row);
+        OnSelectedRowChanged();
+    }
+
+    function grp1_clk(index) {
+        SetActiveRow(index, null);
+        OnSelectedRowChanged();
+    }
+
+    function OnSelectedRowChanged() {
+          
+        }
+
+        function tr_over(row) {
+            if (row.style.backgroundColor == "#ffffff" || row.style.backgroundColor == "")
+                row.style.backgroundColor = "#fff5d9";
+        }
+
+        function tr_out(row) {
+            row.style.backgroundColor = "";
+            if (selectedRow != null)
+                selectedRow.style.backgroundColor = "#fddd80";
+        }
+
+        function OnChangeDrpYear(pThis) {
+            if (ie4)
+                ano = pThis.options(pThis.selectedIndex).value;
+            else
+                ano = pThis.options[pThis.selectedIndex].value;
+            Reload();
+        }
+
+        function OnChangeDrpActProy(pThis) {
+            if (ie4)
+                actProy = pThis.options(pThis.selectedIndex).value;
+            else
+                actProy = pThis.options[pThis.selectedIndex].value;
+            Reload();
+        }
+
+        function Reload() {
+            var params = "";
+            if (ano != null)
+                params += "&y=" + ano;
+            if (actProy != null)
+                params += "&ap=" + actProy;
+            var topUrl = "default.aspx";
+            if (params.length > 0)
+                topUrl += "?" + params.slice(1);
+            if (document.getElementById) {
+                document.getElementById("DivContent").style.display = "none";
+                document.getElementById("DivProgress").style.display = "";
+            }
+            window.parent.location = topUrl;
+        }
+
+        function SubmitForm(cmd, arg) {
+	    _FormSubmit(cmd, arg);
+        }
+
+        function Export() {
+            if (exportUrl != null) {
+                window.open(exportUrl, "_blank",
+                    "status=yes,toolbar=no,resizable=yes,menubar=yes,scrollbars=yes,width=650,height=400,top=50,left=50");
+            }
+        }
+
+        function ShowGraphic() {
+            if (graphicUrl != null) {
+                window.open(graphicUrl, "_blank",
+                    "status=no,toolbar=no,resizable=yes,menubar=no,scrollbars=yes,width=1200,height=800,top=50,left=50");
+            }
+        }
+
+        function ShowFichaProy(proy) {
+            
+            window.open("https://ofi5.mef.gob.pe/ssi/Ssi/Index?codigo=" + proy + "&tipo=2", "_blank", 
+                "status=no,toolbar=no,resizable=yes,menubar=no,scrollbars=yes,width=1280,height=720,top=50,left=50");
+        }
+        //-->
+    </script>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$CPH1$ScriptManager1', 'aspnetForm', ['tctl00$CPH1$UpdatePanel1',''], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div id="ctl00_CPH1_PnlToolBar" class="ToolBar">
+	
+        <table>
+            <tr>
+                <td id="lft">&nbsp; <a href="javascript:Reload();" class="ToolBarBtn" title="Subir hasta el nivel inicial"
+                    onmouseover='javascript:this.style.borderColor="#dbe3eb";this.style.backgroundColor="#ffffff";'
+                    onmouseout='javascript:this.style.borderColor="";this.style.backgroundColor="";'>
+                    <img id="ctl00_CPH1_Image1" src="../Images/UpFirst.gif" align="absmiddle" style="border-color: transparent;" />&nbsp; Reiniciar</a>&nbsp; 
+                    
+                    <a id="ctl00_CPH1_lbtnExportar" class="ToolBarBtn" href="javascript:__doPostBack(&#39;ctl00$CPH1$lbtnExportar&#39;,&#39;&#39;)"><img id="ctl00_CPH1_Image4" src="../Images/xls.gif" align="absmiddle" style="border-color: transparent;" />Exportar
+                    </a>
+                    <a href="javascript:ShowGraphic();"
+                        class="ToolBarBtn" title="Mostrar un gráfico de los datos" onmouseover='javascript:this.style.borderColor="#dbe3eb";this.style.backgroundColor="#ffffff";'
+                        onmouseout='javascript:this.style.borderColor="";this.style.backgroundColor="";'>
+                        <img id="ctl00_CPH1_Image3" src="../Images/chart.gif" align="absmiddle" style="border-color: transparent;" />&nbsp; Graficar</a>
+                </td>
+                <td id="rgt">Año
+                    <select name="ctl00$CPH1$DrpYear" id="ctl00_CPH1_DrpYear" onchange="OnChangeDrpYear(this)">
+		<option value="1999">1999</option>
+		<option value="2000">2000</option>
+		<option value="2001">2001</option>
+		<option value="2002">2002</option>
+		<option value="2003">2003</option>
+		<option value="2004">2004</option>
+		<option value="2005">2005</option>
+		<option value="2006">2006</option>
+		<option value="2007">2007</option>
+		<option value="2008">2008</option>
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013">2013</option>
+		<option value="2014">2014</option>
+		<option value="2015">2015</option>
+		<option value="2016">2016</option>
+		<option value="2017">2017</option>
+		<option value="2018">2018</option>
+		<option value="2019">2019</option>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option selected="selected" value="2024">2024</option>
+
+	</select>
+                    |
+                    <select name="ctl00$CPH1$DrpActProy" id="ctl00_CPH1_DrpActProy" onchange="OnChangeDrpActProy(this)">
+		<option value="ActProy">Actividades/Proyectos</option>
+		<option value="Actividad">S&#243;lo Actividades</option>
+		<option selected="selected" value="Proyecto">S&#243;lo Proyectos</option>
+
+	</select>
+                </td>
+            </tr>
+        </table>
+    
+</div>
+    <div id="DivContent">
+        <div id="ctl00_CPH1_PnlButtons" class="DimButtons">
+	
+            <table>
+                <tr valign="middle" align="center">
+                    <td style="border-left-width: 0px; height: 22px;">¿Quién gasta?
+                        
+                    </td>
+                    <td style="height: 22px">¿En qué se gasta?
+                        
+                    </td>
+                    <td style="height: 22px">¿Con qué se<br />
+                        financian los gastos?
+                        
+                    </td>
+                    <td style="height: 22px">¿Cómo se estructura<br />
+                        el gasto?
+                        
+                    </td>
+                    <td style="height: 22px">¿Dónde se gasta?
+                        
+                    </td>
+                    <td style="border-right-width: 0px; height: 22px;">¿Cuándo se hizo el gasto?
+                        
+                    </td>
+                </tr>
+                <tr valign="top" align="center">
+                    <td style="border-left-width: 0px;">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        <input type="submit" name="ctl00$CPH1$BtnProgramaPpto" value="Categoría Presupuestal" onclick="OnClickButton();" id="ctl00_CPH1_BtnProgramaPpto" class="Button" style="width:120px;" />
+                        
+                        <input type="submit" name="ctl00$CPH1$BtnAAO" value="Act./Acción de Inv./Obra" onclick="OnClickButton();" id="ctl00_CPH1_BtnAAO" class="Button" style="width:130px;" />
+                        
+                        
+                        <input type="submit" name="ctl00$CPH1$BtnFuncion" value="Función" onclick="OnClickButton();" id="ctl00_CPH1_BtnFuncion" class="Button" />
+                        
+                        
+                    </td>
+                    <td>
+                        <input type="submit" name="ctl00$CPH1$BtnFuenteAgregada" value="Fuente" onclick="OnClickButton();" id="ctl00_CPH1_BtnFuenteAgregada" class="Button" />
+                        <input type="submit" name="ctl00$CPH1$BtnRubro" value="Rubro" onclick="OnClickButton();" id="ctl00_CPH1_BtnRubro" class="Button" />
+                        
+                    </td>
+                    <td>
+                        <input type="submit" name="ctl00$CPH1$BtnGenerica" value="Genérica" onclick="OnClickButton();" id="ctl00_CPH1_BtnGenerica" class="Button" />
+                        
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        <input type="submit" name="ctl00$CPH1$BtnDepartamentoMeta" value="Departamento" onclick="OnClickButton();" id="ctl00_CPH1_BtnDepartamentoMeta" class="Button" />
+                        
+                    </td>
+                    <td style="border-right-width: 0px;">
+                        <input type="submit" name="ctl00$CPH1$BtnTrimestre" value="Trimestre" onclick="OnClickButton();" id="ctl00_CPH1_BtnTrimestre" class="Button" />
+                        <input type="submit" name="ctl00$CPH1$BtnMes" value="Mes" onclick="OnClickButton();" id="ctl00_CPH1_BtnMes" class="Button" />
+                    </td>
+                </tr>
+            </table>
+        
+</div>
+        <div id="PnlHistory">
+            
+                    <table class="History" cellspacing="0" cellpadding="1">
+                
+                    <tr align="right">
+                        <td id="ctl00_CPH1_RptHistory_ctl01_TD0" align="center" style="font-size: 7pt; width: 22px; white-space: nowrap; cursor: pointer;" onmouseover="this.style.backgroundColor = &quot;#ffffff&quot;" onmouseout="this.style.backgroundColor = &quot;&quot;" title="Subir hasta TOTAL" onclick="GoUpTo(0)">
+                            <img src="../images/Up-ye.gif" style="vertical-align: middle" />
+                        </td>
+
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            TOTAL
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            56,233,353,054
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            64,867,381,206
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            40,568,818,805
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            24,462,442,572
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            16,565,189,667
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            10,944,061,734
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            10,234,576,631
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;16.9</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        <td id="ctl00_CPH1_RptHistory_ctl02_TD0" align="center" style="font-size: 7pt; width: 22px; white-space: nowrap; cursor: pointer;" onmouseover="this.style.backgroundColor = &quot;#ffffff&quot;" onmouseout="this.style.backgroundColor = &quot;&quot;" title="Subir hasta Nivel de Gobierno" onclick="GoUpTo(1)">
+                            <img src="../images/Up-ye.gif" style="vertical-align: middle" />
+                        </td>
+
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Nivel de Gobierno M: GOBIERNOS LOCALES
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            14,434,122,423
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            21,651,382,110
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            13,512,683,626
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            7,696,013,143
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            5,952,360,226
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,575,132,335
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,322,628,279
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;16.5</td>
+                    </tr>
+                
+                    <tr align="right">
+                        <td id="ctl00_CPH1_RptHistory_ctl03_TD0" align="center" style="font-size: 7pt; width: 22px; white-space: nowrap; cursor: pointer;" onmouseover="this.style.backgroundColor = &quot;#ffffff&quot;" onmouseout="this.style.backgroundColor = &quot;&quot;" title="Subir hasta Gob.Loc./Mancom." onclick="GoUpTo(37)">
+                            <img src="../images/Up-ye.gif" style="vertical-align: middle" />
+                        </td>
+
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Gob.Loc./Mancom. M: MUNICIPALIDADES
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            14,434,122,423
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            21,642,740,328
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            13,504,511,302
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            7,687,840,818
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            5,944,187,902
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,574,187,984
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,321,737,833
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;16.5</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        <td id="ctl00_CPH1_RptHistory_ctl04_TD0" align="center" style="font-size: 7pt; width: 22px; white-space: nowrap; cursor: pointer;" onmouseover="this.style.backgroundColor = &quot;#ffffff&quot;" onmouseout="this.style.backgroundColor = &quot;&quot;" title="Subir hasta Departamento" onclick="GoUpTo(5)">
+                            <img src="../images/Up-ye.gif" style="vertical-align: middle" />
+                        </td>
+
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Departamento 10: HUANUCO
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            357,547,677
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            492,621,995
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            279,766,637
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            151,046,477
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            68,069,072
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            44,752,099
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            40,031,487
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;9.1</td>
+                    </tr>
+                
+                    <tr align="right">
+                        <td id="ctl00_CPH1_RptHistory_ctl05_TD0" align="center" style="font-size: 7pt; width: 22px; white-space: nowrap; cursor: pointer;" onmouseover="this.style.backgroundColor = &quot;#ffffff&quot;" onmouseout="this.style.backgroundColor = &quot;&quot;" title="Subir hasta Provincia" onclick="GoUpTo(6)">
+                            <img src="../images/Up-ye.gif" style="vertical-align: middle" />
+                        </td>
+
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Provincia 1001: HUANUCO
+                            
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            83,430,092
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            124,469,898
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            71,059,925
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            49,350,706
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            17,505,224
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            12,923,305
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            9,691,545
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;10.4</td>
+                    </tr>
+                
+                    <tr align="right" class="alt">
+                        <td id="ctl00_CPH1_RptHistory_ctl06_TD0" align="center" style="font-size: 7pt; width: 22px; white-space: nowrap; cursor: pointer;" onmouseover="this.style.backgroundColor = &quot;#ffffff&quot;" onmouseout="this.style.backgroundColor = &quot;&quot;" title="Subir hasta Municipalidad" onclick="GoUpTo(7)">
+                            <img src="../images/Up-ye.gif" style="vertical-align: middle" />
+                        </td>
+
+                        <td align="left" style="font-size: 7pt; width: auto">
+                            Municipalidad 100111-301835: MUNICIPALIDAD DISTRITAL DE PILLCO MARCA
+                            
+                            
+                            
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            1,350,232
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            6,902,056
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            6,411,148
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,554,246
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,156,844
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,133,144
+                        </td>
+                        <td align="right" style="width: 100px; white-space: nowrap">
+                            3,093,700
+                        </td>
+                        <td align="right" style="width: 50px; white-space: nowrap">&nbsp;45.4</td>
+                    </tr>
+                
+                    </table>
+                
+        </div>
+        <div id="ctl00_CPH1_UpdatePanel1">
+	
+                <div id="PnlData">
+                    <table id="ctl00_CPH1_Mt0" class="MapTable" style="width:100%;">
+		<tr id="ctl00_CPH1_Mt0_Row0">
+			<td id="ctl00_CPH1_Mt0_td0" title="Haga clic aquí para ordenar por código" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td0&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:22px;white-space:nowrap;cursor:hand;">&nbsp;</td><td id="ctl00_CPH1_Mt0_td1" title="Concepto" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td1&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="cursor:hand;">Proyecto</td><td id="ctl00_CPH1_Mt0_td2" title="Presupuesto Institucional de Apertura" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td2&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">PIA<img id="ctl00_CPH1_Mt0_ImgGlobePIA" class="Tip" src="../Images/globe_left_blue.gif" /></td><td id="ctl00_CPH1_Mt0_td3" title="Presupuesto Institucional Modificado" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td3&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">PIM<img id="ctl00_CPH1_Mt0_ImgGlobePIM" class="Tip" src="../Images/globe_left_blue.gif" /></td><td id="ctl00_CPH1_Mt0_td9" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td9&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Certificación<img id="ctl00_CPH1_Mt0_ImgGlobeCertificacion" class="Tip" src="../Images/globe_left_blue.gif" /></td><td id="ctl00_CPH1_Mt0_td4" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td4&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Compromiso Anual<img id="ctl00_CPH1_Mt0_ImgGlobeCompAnual" class="Tip" src="../Images/globe_left_blue.gif" /></td><td id="ctl00_CPH1_Mt0_TableCell1" title="Ejecución de Gastos en las diferentes fases" colspan="3">
+                                Ejecución
+                                <img id="ctl00_CPH1_Mt0_ImgGlobeEjecucion" class="Tip" src="../Images/globe_left_blue.gif" /></td><td id="ctl00_CPH1_Mt0_td8" rowspan="2" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td8&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:50px;cursor:hand;">Avance %&nbsp;
+                            </td>
+		</tr><tr id="ctl00_CPH1_Mt0_Row1">
+			<td id="ctl00_CPH1_Mt0_td5" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td5&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;cursor:hand;">Atención de Compromiso Mensual&nbsp;
+                            </td><td id="ctl00_CPH1_Mt0_td6" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td6&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">Devengado&nbsp;
+                            </td><td id="ctl00_CPH1_Mt0_td7" onclick="__doPostBack(&#39;ctl00$CPH1$Mt0$td7&#39;,&#39;&#39;)" onmouseover="this.style.backgroundColor = &#39;#568AC1&#39;;" onmouseout="this.style.backgroundColor = &#39;&#39;;" style="width:100px;white-space:nowrap;cursor:hand;">Girado&nbsp;
+                            </td>
+		</tr>
+	</table>
+                    <div id="ctl00_CPH1_PnlSearch" class="PnlSearch">
+		
+                        <table width="100%" border="0" cellpadding="0">
+                            <tr>
+                                <td align="left" style="white-space: nowrap; height: 20px;">Buscar Ítem&nbsp;
+                                    <input name="ctl00$CPH1$TxtSearch" type="text" id="ctl00_CPH1_TxtSearch" style="width:200px;" />&nbsp;
+                                    <a id="ctl00_CPH1_BtnSearchByCode" class="Search" href="javascript:__doPostBack(&#39;ctl00$CPH1$BtnSearchByCode&#39;,&#39;&#39;)">Por código</a>&nbsp;&nbsp;|&nbsp;
+                                    <a id="ctl00_CPH1_BtnSearchByDescription" class="Search" href="javascript:__doPostBack(&#39;ctl00$CPH1$BtnSearchByDescription&#39;,&#39;&#39;)">Por descripción</a>
+                                    
+                                    
+                                </td>
+                                <td align="right" style="white-space: nowrap; height: 20px;">
+                                    <a href='javascript:window.open("../ComoBuscar.htm", "_help", "status=no,toolbar=no,menubar=no,width=400,height=350,scrollbars=yes,top=50,left=50"); void 0;'>¿Cómo buscar?</a>
+                                </td>
+                            </tr>
+                        </table>
+                    
+	</div>
+                    
+                    
+                            <table class="Data" cellspacing="0" cellpadding="1">
+                        
+                            <tr id="tr0" onclick='kCod="2000129";tr_clk(0, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl01_TD0" style="white-space: nowrap; width: 22px" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2000129/20000/0/0/0/0/0/0"
+                                        aria-label="CONSTRUCCION Y MEJORAMIENTO DE CAMINOS RURALES, 
+                                                    PIA: 20,000, 
+                                                    PIM: 0, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2000129    ";grp1_clk(0)'>
+                                </td>
+	
+                                <td align="left" style="width: auto">
+                                    2000129: CONSTRUCCION Y MEJORAMIENTO DE CAMINOS RURALES
+                                    
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    20,000
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 100px">
+                                    0
+                                </td>
+                                <td style="white-space: nowrap; width: 50px">&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2000129&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr1" onclick='kCod="2001383";tr_clk(1, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl02_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2001383/60000/0/0/0/0/0/0"
+                                        aria-label="CONSTRUCCION Y EQUIPAMIENTO DE CENTROS EDUCATIVOS, 
+                                                    PIA: 60,000, 
+                                                    PIM: 0, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2001383    ";grp1_clk(1)'>
+                                </td>
+	
+                                <td align="left">
+                                    2001383: CONSTRUCCION Y EQUIPAMIENTO DE CENTROS EDUCATIVOS
+                                    
+                                </td>
+                                <td>
+                                    60,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2001383&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr2" onclick='kCod="2001445";tr_clk(2, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl03_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2001445/377933/4281/0/0/0/0/0"
+                                        aria-label="CONSTRUCCION DE PISTAS Y VEREDAS, 
+                                                    PIA: 377,933, 
+                                                    PIM: 4,281, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2001445    ";grp1_clk(2)'>
+                                </td>
+	
+                                <td align="left">
+                                    2001445: CONSTRUCCION DE PISTAS Y VEREDAS
+                                    
+                                </td>
+                                <td>
+                                    377,933
+                                </td>
+                                <td>
+                                    4,281
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2001445&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr3" onclick='kCod="2001481";tr_clk(3, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl04_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2001481/20000/0/0/0/0/0/0"
+                                        aria-label="CONSTRUCCION SISTEMA DE DESAGUE, 
+                                                    PIA: 20,000, 
+                                                    PIM: 0, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2001481    ";grp1_clk(3)'>
+                                </td>
+	
+                                <td align="left">
+                                    2001481: CONSTRUCCION SISTEMA DE DESAGUE
+                                    
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2001481&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr4" onclick='kCod="2001621";tr_clk(4, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl05_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2001621/818797/278666/195000/64000/64000/64000/255000"
+                                        aria-label="ESTUDIOS DE PRE-INVERSION, 
+                                                    PIA: 818,797, 
+                                                    PIM: 278,666, 
+                                                    CERTIFICACION: 255,000, 
+                                                    COMPROMISO ANUAL: 195,000, 
+                                                    COMPROMISO MENSUAL: 64,000
+                                                    DEVENGADO: 64,000
+                                                    GIRADO: 64,000
+                                                    PORCENTAJE AVANCE: 23.0"
+                                        onclick='kCod = "2001621    ";grp1_clk(4)'>
+                                </td>
+	
+                                <td align="left">
+                                    2001621: ESTUDIOS DE PRE-INVERSION
+                                    
+                                </td>
+                                <td>
+                                    818,797
+                                </td>
+                                <td>
+                                    278,666
+                                </td>
+                                <td>
+                                    255,000
+                                </td>
+                                <td>
+                                    195,000
+                                </td>
+                                <td>
+                                    64,000
+                                </td>
+                                <td>
+                                    64,000
+                                </td>
+                                <td>
+                                    64,000
+                                </td>
+                                <td>&nbsp;
+                                    23.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2001621&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr5" onclick='kCod="2005564";tr_clk(5, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl06_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2005564/15709/0/0/0/0/0/0"
+                                        aria-label="CONSTRUCCION DE DEFENSAS RIBEREÑAS, 
+                                                    PIA: 15,709, 
+                                                    PIM: 0, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2005564    ";grp1_clk(5)'>
+                                </td>
+	
+                                <td align="left">
+                                    2005564: CONSTRUCCION DE DEFENSAS RIBEREÑAS
+                                    
+                                </td>
+                                <td>
+                                    15,709
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2005564&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr6" onclick='kCod="2157200";tr_clk(6, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl07_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2157200/0/11700/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO DE LA OFERTA DE LOS SERVICIOS EDUCATIVOS, PARA EL LOGRO DEL APRENDIZAJE ESTABLECIDO EN EL DISEÑO CURRICULAR, POR NIVELES, EN LA INSTITUCION EDUCATIVA PUBLICA INTEGRADA N 32842 DE POTRACANCHA, DISTRITO DE PILLCO MARCA - HUANUCO - HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 11,700, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2157200    ";grp1_clk(6)'>
+                                </td>
+	
+                                <td align="left">
+                                    2157200: MEJORAMIENTO DE LA OFERTA DE LOS SERVICIOS EDUCATIVOS, PARA EL LOGRO DEL APRENDIZAJE ESTABLECIDO EN EL DISEÑO CURRICULAR, POR NIVELES, EN LA INSTITUCION EDUCATIVA PUBLICA INTEGRADA N 32842 DE POTRACANCHA, DISTRITO DE PILLCO MARCA - HUANUCO - HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    11,700
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2157200&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr7" onclick='kCod="2222510";tr_clk(7, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl08_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2222510/0/40000/0/0/0/0/40000"
+                                        aria-label="MEJORAMIENTO DE LA OFERTA DE LOS SERVICIOS EDUCATIVOS PARA EL LOGRO DEL APRENDIZAJE ESTABLECIDO EN EL DISEÑO CURRICULAR POR NIVELES EN LA INSTITUCION EDUCATIVA PUBLICA INTEGRADA N 32271 DE LA LOCALIDAD DE ANDABAMBA, DISTRITO DE PILLCO MARCA - HUANUC, 
+                                                    PIA: 0, 
+                                                    PIM: 40,000, 
+                                                    CERTIFICACION: 40,000, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2222510    ";grp1_clk(7)'>
+                                </td>
+	
+                                <td align="left">
+                                    2222510: MEJORAMIENTO DE LA OFERTA DE LOS SERVICIOS EDUCATIVOS PARA EL LOGRO DEL APRENDIZAJE ESTABLECIDO EN EL DISEÑO CURRICULAR POR NIVELES EN LA INSTITUCION EDUCATIVA PUBLICA INTEGRADA N 32271 DE LA LOCALIDAD DE ANDABAMBA, DISTRITO DE PILLCO MARCA - HUANUC
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    40,000
+                                </td>
+                                <td>
+                                    40,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2222510&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr8" onclick='kCod="2245880";tr_clk(8, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl09_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2245880/0/11871/11870.51/0/0/0/11870.51"
+                                        aria-label="MEJORAMIENTO Y CONSTRUCCION DE LAS VIAS VEHICULARES Y PEATONALES DE LOS JIRONES LOS NARANJOS, LOS CEREZOS, Y LOS NISPEROS DE LA ASOCIACION DE VIVIENDA HERMILIO VALDIZAN, Y LOS JIRONES LOS ALISOS Y LOS MANGOS DE LA URBANIZACION SANTA ISABEL EN CAYHUAYNA BAJA, DISTRITO DE PILLCO MARCA - HUANUCO - HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 11,871, 
+                                                    CERTIFICACION: 11,871, 
+                                                    COMPROMISO ANUAL: 11,871, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2245880    ";grp1_clk(8)'>
+                                </td>
+	
+                                <td align="left">
+                                    2245880: MEJORAMIENTO Y CONSTRUCCION DE LAS VIAS VEHICULARES Y PEATONALES DE LOS JIRONES LOS NARANJOS, LOS CEREZOS, Y LOS NISPEROS DE LA ASOCIACION DE VIVIENDA HERMILIO VALDIZAN, Y LOS JIRONES LOS ALISOS Y LOS MANGOS DE LA URBANIZACION SANTA ISABEL EN CAYHUAYNA BAJA, DISTRITO DE PILLCO MARCA - HUANUCO - HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    11,871
+                                </td>
+                                <td>
+                                    11,871
+                                </td>
+                                <td>
+                                    11,871
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2245880&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr9" onclick='kCod="2309556";tr_clk(9, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl10_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2309556/37793/37793/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO Y CONSTRUCCION DE PISTAS Y VEREDAS EN EL PASAJE SIN NOMBRE 76 (PJE. JAZMINES) DE LA LOCALIDAD DE CAYHUAYNA, DISTRITO DE PILLCO MARCA - HUANUCO - HUANUCO, 
+                                                    PIA: 37,793, 
+                                                    PIM: 37,793, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2309556    ";grp1_clk(9)'>
+                                </td>
+	
+                                <td align="left">
+                                    2309556: MEJORAMIENTO Y CONSTRUCCION DE PISTAS Y VEREDAS EN EL PASAJE SIN NOMBRE 76 (PJE. JAZMINES) DE LA LOCALIDAD DE CAYHUAYNA, DISTRITO DE PILLCO MARCA - HUANUCO - HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    37,793
+                                </td>
+                                <td>
+                                    37,793
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2309556&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr10" onclick='kCod="2444383";tr_clk(10, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl11_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2444383/0/19500/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS EDUACATIVOS DE LA I.E.I N° 444 DE CAYHUAYNA BAJA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 19,500, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2444383    ";grp1_clk(10)'>
+                                </td>
+	
+                                <td align="left">
+                                    2444383: MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS EDUACATIVOS DE LA I.E.I N° 444 DE CAYHUAYNA BAJA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    19,500
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2444383&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr11" onclick='kCod="2456747";tr_clk(11, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl12_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2456747/0/38000/0/0/0/0/0"
+                                        aria-label="CREACION DE LOS SERVICIOS DE AGUA POTABLE Y DISPOSICION SANITARIA DE EXCRETAS EN LAS LOCALIDADES DE HUANCAN Y VICSACOCHA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 38,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2456747    ";grp1_clk(11)'>
+                                </td>
+	
+                                <td align="left">
+                                    2456747: CREACION DE LOS SERVICIOS DE AGUA POTABLE Y DISPOSICION SANITARIA DE EXCRETAS EN LAS LOCALIDADES DE HUANCAN Y VICSACOCHA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    38,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2456747&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr12" onclick='kCod="2465081";tr_clk(12, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl13_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2465081/0/12500/12500/12500/12500/12500/12500"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL EN EL JR. MONSEÑOR ALFONSO SARDINAS CDRA 3 Y 4, PSJE S/N (26, 28, 32, 33), PSJE LOS ANGELES, JR. PRINCIPE ILLATHUPA CDRA2, JR. AUGUSTO FIGUEROA CDRA 2, CALLE COLOMBIA CDRA 1, CALLE PALESTINA, PSJE PALESTINA CDRA 1, CALLE ARGENTINA CDRA 5, CALLE MEXICO, AV. JOSE VARALLANOS CDRA 1, 2 Y 3 DE LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 12,500, 
+                                                    CERTIFICACION: 12,500, 
+                                                    COMPROMISO ANUAL: 12,500, 
+                                                    COMPROMISO MENSUAL: 12,500
+                                                    DEVENGADO: 12,500
+                                                    GIRADO: 12,500
+                                                    PORCENTAJE AVANCE: 100.0"
+                                        onclick='kCod = "2465081    ";grp1_clk(12)'>
+                                </td>
+	
+                                <td align="left">
+                                    2465081: MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL EN EL JR. MONSEÑOR ALFONSO SARDINAS CDRA 3 Y 4, PSJE S/N (26, 28, 32, 33), PSJE LOS ANGELES, JR. PRINCIPE ILLATHUPA CDRA2, JR. AUGUSTO FIGUEROA CDRA 2, CALLE COLOMBIA CDRA 1, CALLE PALESTINA, PSJE PALESTINA CDRA 1, CALLE ARGENTINA CDRA 5, CALLE MEXICO, AV. JOSE VARALLANOS CDRA 1, 2 Y 3 DE LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    12,500
+                                </td>
+                                <td>
+                                    12,500
+                                </td>
+                                <td>
+                                    12,500
+                                </td>
+                                <td>
+                                    12,500
+                                </td>
+                                <td>
+                                    12,500
+                                </td>
+                                <td>
+                                    12,500
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2465081&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr13" onclick='kCod="2467659";tr_clk(13, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl14_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2467659/0/186850/168165/0/0/0/168165"
+                                        aria-label="AMPLIACION DEL SERVICIO DEL SISTEMA DE ALCANTARILLADO SANITARIO DE LA LOCALIDAD SANTA ROSA DE PITUMAMA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 186,850, 
+                                                    CERTIFICACION: 168,165, 
+                                                    COMPROMISO ANUAL: 168,165, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2467659    ";grp1_clk(13)'>
+                                </td>
+	
+                                <td align="left">
+                                    2467659: AMPLIACION DEL SERVICIO DEL SISTEMA DE ALCANTARILLADO SANITARIO DE LA LOCALIDAD SANTA ROSA DE PITUMAMA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    186,850
+                                </td>
+                                <td>
+                                    168,165
+                                </td>
+                                <td>
+                                    168,165
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2467659&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr14" onclick='kCod="2468376";tr_clk(14, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl15_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2468376/0/20000/0/0/0/0/0"
+                                        aria-label="CREACION DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR, INGENIERIA CDRA 1-5, CALLE 3 DE MAYO, JIRON 5 DE MAYO CDRA 3-5, CALLE 27 DE NOVIEMBRE CDRA 1, CALLE ANCASH CDRA 1, CALLE SANCHEZ CARRION Y LOS PASAJES SANCHEZ CARRION 1 Y 2 DE LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 20,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2468376    ";grp1_clk(14)'>
+                                </td>
+	
+                                <td align="left">
+                                    2468376: CREACION DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR, INGENIERIA CDRA 1-5, CALLE 3 DE MAYO, JIRON 5 DE MAYO CDRA 3-5, CALLE 27 DE NOVIEMBRE CDRA 1, CALLE ANCASH CDRA 1, CALLE SANCHEZ CARRION Y LOS PASAJES SANCHEZ CARRION 1 Y 2 DE LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2468376&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr15" onclick='kCod="2496173";tr_clk(15, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl16_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2496173/0/43455/43453.10/0/0/0/43453.10"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL DEL PASAJE ANDALUCIA (TRAMO JR. GUARDIA CIVIL - JR. SANTA ROSA Y JR. LOS ALISOS - JR. LOS VILCOS) EN LA LOCALIDAD DE CAYHUAYNA BAJA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 43,455, 
+                                                    CERTIFICACION: 43,453, 
+                                                    COMPROMISO ANUAL: 43,453, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2496173    ";grp1_clk(15)'>
+                                </td>
+	
+                                <td align="left">
+                                    2496173: MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL DEL PASAJE ANDALUCIA (TRAMO JR. GUARDIA CIVIL - JR. SANTA ROSA Y JR. LOS ALISOS - JR. LOS VILCOS) EN LA LOCALIDAD DE CAYHUAYNA BAJA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    43,455
+                                </td>
+                                <td>
+                                    43,453
+                                </td>
+                                <td>
+                                    43,453
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2496173&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr16" onclick='kCod="2514523";tr_clk(16, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl17_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2514523/0/10000/0/0/0/0/0"
+                                        aria-label="CREACION DEL SERVICIO DEL ESPACIO PUBLICO DEL PARQUE DE RECREACION ENTRE LA INTERSECCION DE LOS JIRONES INGENIERIA Y FAUSTINO SANCHEZ CARRION DE LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 10,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2514523    ";grp1_clk(16)'>
+                                </td>
+	
+                                <td align="left">
+                                    2514523: CREACION DEL SERVICIO DEL ESPACIO PUBLICO DEL PARQUE DE RECREACION ENTRE LA INTERSECCION DE LOS JIRONES INGENIERIA Y FAUSTINO SANCHEZ CARRION DE LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    10,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2514523&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr17" onclick='kCod="2517254";tr_clk(17, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl18_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2517254/0/1913/1913/0/0/0/1913"
+                                        aria-label="MEJORAMIENTO Y AMPLIACION DEL SERVICIO DE TRANSITABILIDAD CON SEMAFOROS Y SEÑALIZACION VIAL EN LAS INTERSECCIONES DE LA AV. UNIVERSITARIA CON: AV. VELASCO ALVARADO (CELUSA), AV. BRASIL, CL OTORONGO, CARRETERA A HUANCACHUPA Y EL INGRESO A LA I.E. DE PITUMAMA; INTERSECCIONES DE LA AV. VELASCO ALVARADO CON : JR. RICARDO PALMA, AV V. GUTARRA Y AV ANDRES FERANDEZ GARRIDO DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 1,913, 
+                                                    CERTIFICACION: 1,913, 
+                                                    COMPROMISO ANUAL: 1,913, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2517254    ";grp1_clk(17)'>
+                                </td>
+	
+                                <td align="left">
+                                    2517254: MEJORAMIENTO Y AMPLIACION DEL SERVICIO DE TRANSITABILIDAD CON SEMAFOROS Y SEÑALIZACION VIAL EN LAS INTERSECCIONES DE LA AV. UNIVERSITARIA CON: AV. VELASCO ALVARADO (CELUSA), AV. BRASIL, CL OTORONGO, CARRETERA A HUANCACHUPA Y EL INGRESO A LA I.E. DE PITUMAMA; INTERSECCIONES DE LA AV. VELASCO ALVARADO CON : JR. RICARDO PALMA, AV V. GUTARRA Y AV ANDRES FERANDEZ GARRIDO DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    1,913
+                                </td>
+                                <td>
+                                    1,913
+                                </td>
+                                <td>
+                                    1,913
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2517254&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr18" onclick='kCod="2536252";tr_clk(18, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl19_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2536252/0/33376/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS DE TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR LOS PINOS Y JR LOS CEDROS EN CAYHUAYNA Y CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 33,376, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2536252    ";grp1_clk(18)'>
+                                </td>
+	
+                                <td align="left">
+                                    2536252: MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS DE TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR LOS PINOS Y JR LOS CEDROS EN CAYHUAYNA Y CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    33,376
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2536252&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr19" onclick='kCod="2539029";tr_clk(19, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl20_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2539029/0/24647/24646.01/24646.01/24646.01/24646.01/24646.01"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL EN LA AV. BRASIL, DESDE LA AV. JUAN VELASCO ALVARADO HASTA LA AV. MIGUEL GRAU EN LA LOCALIDAD DE CAYHUAYNA, DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 24,647, 
+                                                    CERTIFICACION: 24,646, 
+                                                    COMPROMISO ANUAL: 24,646, 
+                                                    COMPROMISO MENSUAL: 24,646
+                                                    DEVENGADO: 24,646
+                                                    GIRADO: 24,646
+                                                    PORCENTAJE AVANCE: 100.0"
+                                        onclick='kCod = "2539029    ";grp1_clk(19)'>
+                                </td>
+	
+                                <td align="left">
+                                    2539029: MEJORAMIENTO DEL SERVICIO DE TRANSITABILIDAD VEHICULAR Y PEATONAL EN LA AV. BRASIL, DESDE LA AV. JUAN VELASCO ALVARADO HASTA LA AV. MIGUEL GRAU EN LA LOCALIDAD DE CAYHUAYNA, DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    24,647
+                                </td>
+                                <td>
+                                    24,646
+                                </td>
+                                <td>
+                                    24,646
+                                </td>
+                                <td>
+                                    24,646
+                                </td>
+                                <td>
+                                    24,646
+                                </td>
+                                <td>
+                                    24,646
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2539029&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr20" onclick='kCod="2562428";tr_clk(20, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl21_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2562428/0/20000/20000/20000/20000/20000/20000"
+                                        aria-label="MEJORAMIENTO DE SERVICIO DE MOVILIDAD URBANA DEL JIRON PUENTE PIEDRA EN LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 20,000, 
+                                                    CERTIFICACION: 20,000, 
+                                                    COMPROMISO ANUAL: 20,000, 
+                                                    COMPROMISO MENSUAL: 20,000
+                                                    DEVENGADO: 20,000
+                                                    GIRADO: 20,000
+                                                    PORCENTAJE AVANCE: 100.0"
+                                        onclick='kCod = "2562428    ";grp1_clk(20)'>
+                                </td>
+	
+                                <td align="left">
+                                    2562428: MEJORAMIENTO DE SERVICIO DE MOVILIDAD URBANA DEL JIRON PUENTE PIEDRA EN LA LOCALIDAD DE CAYHUAYNA DEL DISTRITO DE PILLCO MARCA - PROVINCIA DE HUANUCO - DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>
+                                    20,000
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2562428&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr21" onclick='kCod="2575540";tr_clk(21, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl22_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2575540/0/648745/410373.31/410373.31/410373.31/410373.31/644744.14"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATONAL EN EL JR. DANIEL ALCIDES CARRION DESDE LA AV. UNIVERSITARIA HASTA LA AV. JUAN VELASCO ALVARADO, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 648,745, 
+                                                    CERTIFICACION: 644,744, 
+                                                    COMPROMISO ANUAL: 410,373, 
+                                                    COMPROMISO MENSUAL: 410,373
+                                                    DEVENGADO: 410,373
+                                                    GIRADO: 410,373
+                                                    PORCENTAJE AVANCE: 63.3"
+                                        onclick='kCod = "2575540    ";grp1_clk(21)'>
+                                </td>
+	
+                                <td align="left">
+                                    2575540: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATONAL EN EL JR. DANIEL ALCIDES CARRION DESDE LA AV. UNIVERSITARIA HASTA LA AV. JUAN VELASCO ALVARADO, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    648,745
+                                </td>
+                                <td>
+                                    644,744
+                                </td>
+                                <td>
+                                    410,373
+                                </td>
+                                <td>
+                                    410,373
+                                </td>
+                                <td>
+                                    410,373
+                                </td>
+                                <td>
+                                    410,373
+                                </td>
+                                <td>&nbsp;
+                                    63.3
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2575540&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr22" onclick='kCod="2576151";tr_clk(22, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl23_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2576151/0/3200/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO DE LOS SERVICIOS PUBLICOS DE INTEGRACION ECONOMICA Y SOCIAL EN SERVICIO DE PRACTICA DEPORTIVA Y/O RECREATIVA EN LA LOSA DE RECREACION MULTIUSOS LAS VIÑAS EN LA CIUDAD DE CAYHUAYNA BAJA, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 3,200, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2576151    ";grp1_clk(22)'>
+                                </td>
+	
+                                <td align="left">
+                                    2576151: MEJORAMIENTO DE LOS SERVICIOS PUBLICOS DE INTEGRACION ECONOMICA Y SOCIAL EN SERVICIO DE PRACTICA DEPORTIVA Y/O RECREATIVA EN LA LOSA DE RECREACION MULTIUSOS LAS VIÑAS EN LA CIUDAD DE CAYHUAYNA BAJA, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    3,200
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2576151&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr23" onclick='kCod="2576681";tr_clk(23, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl24_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2576681/0/4446117/2090983.96/2090983.96/2090983.96/2086958.96/4446115.55"
+                                        aria-label="MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS OPERATIVOS O MISIONALES INSTITUCIONALES EN ESPACIOS SALUDABLES EN ATENCION AL CIUDADANO EN DESARROLLO SOCIAL Y ECONOMICO DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 4,446,117, 
+                                                    CERTIFICACION: 4,446,116, 
+                                                    COMPROMISO ANUAL: 2,090,984, 
+                                                    COMPROMISO MENSUAL: 2,090,984
+                                                    DEVENGADO: 2,090,984
+                                                    GIRADO: 2,086,959
+                                                    PORCENTAJE AVANCE: 47.0"
+                                        onclick='kCod = "2576681    ";grp1_clk(23)'>
+                                </td>
+	
+                                <td align="left">
+                                    2576681: MEJORAMIENTO Y AMPLIACION DE LOS SERVICIOS OPERATIVOS O MISIONALES INSTITUCIONALES EN ESPACIOS SALUDABLES EN ATENCION AL CIUDADANO EN DESARROLLO SOCIAL Y ECONOMICO DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    4,446,117
+                                </td>
+                                <td>
+                                    4,446,116
+                                </td>
+                                <td>
+                                    2,090,984
+                                </td>
+                                <td>
+                                    2,090,984
+                                </td>
+                                <td>
+                                    2,090,984
+                                </td>
+                                <td>
+                                    2,086,959
+                                </td>
+                                <td>&nbsp;
+                                    47.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2576681&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr24" onclick='kCod="2585715";tr_clk(24, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl25_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2585715/0/7200/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN JR LOS PINOS 1-2, P LOS PINOS, JR SAUCES 1-2, PJ PRIMAVERA, JARDINES, JR: LAS VIÑAS 1-3, LAS CASUARINAS 1-2, PALMAS, LAS PALMERAS 1-2, LOS EUCALIPTOS 1-2, CARLOS SHOWING 3-10 PJ ANGELES CAYHUAYNA BAJA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 7,200, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2585715    ";grp1_clk(24)'>
+                                </td>
+	
+                                <td align="left">
+                                    2585715: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN JR LOS PINOS 1-2, P LOS PINOS, JR SAUCES 1-2, PJ PRIMAVERA, JARDINES, JR: LAS VIÑAS 1-3, LAS CASUARINAS 1-2, PALMAS, LAS PALMERAS 1-2, LOS EUCALIPTOS 1-2, CARLOS SHOWING 3-10 PJ ANGELES CAYHUAYNA BAJA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    7,200
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2585715&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr25" onclick='kCod="2592909";tr_clk(25, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl26_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2592909/0/41000/41000/0/0/0/41000"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN DEL SERVICIO DE MOVILIDAD URBANA DE TRANSITABILIDAD VEHICULAR Y PEATONAL EN EL JR. LOS MANGOS CON LA INTERSECCION AV. JUAN VELASCO ALVARADO HASTA LA FACULTAD DE VETERINARIA LOCALIDAD DE CAYHUAYNA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 41,000, 
+                                                    CERTIFICACION: 41,000, 
+                                                    COMPROMISO ANUAL: 41,000, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2592909    ";grp1_clk(25)'>
+                                </td>
+	
+                                <td align="left">
+                                    2592909: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN DEL SERVICIO DE MOVILIDAD URBANA DE TRANSITABILIDAD VEHICULAR Y PEATONAL EN EL JR. LOS MANGOS CON LA INTERSECCION AV. JUAN VELASCO ALVARADO HASTA LA FACULTAD DE VETERINARIA LOCALIDAD DE CAYHUAYNA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    41,000
+                                </td>
+                                <td>
+                                    41,000
+                                </td>
+                                <td>
+                                    41,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2592909&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr26" onclick='kCod="2594123";tr_clk(26, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl27_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2594123/0/85000/0/0/0/0/0"
+                                        aria-label="CREACION DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR LA CANTUTA CDRA 3, JR SAN CAMILO 1, JR HERMILIO VALDIZAN 4, PJ SALOME 1, JR. LAS GARDENIAS 3-4, JR. SAN PEDRO 1-2, AV. INGENIERIA 26 - 33 CAYHUAYNA ALTA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 85,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2594123    ";grp1_clk(26)'>
+                                </td>
+	
+                                <td align="left">
+                                    2594123: CREACION DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR LA CANTUTA CDRA 3, JR SAN CAMILO 1, JR HERMILIO VALDIZAN 4, PJ SALOME 1, JR. LAS GARDENIAS 3-4, JR. SAN PEDRO 1-2, AV. INGENIERIA 26 - 33 CAYHUAYNA ALTA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    85,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2594123&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr27" onclick='kCod="2601690";tr_clk(27, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl28_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2601690/0/80000/0/0/0/0/80000"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN JR: ALMENDROS 1-5, CIPRECES 1-6 C.SHOWIN 1-2 VILCOS5-7 PJ: S/N CALLE 1, QUINUALES, SAN DIEGO, ROBLES2 ROSALES1-2 NOGALES CLAVELES, GLADIOLOS CORAZON DE JESUS, NISPEROS4, JASMINES LAS AZUCENAS, MANGOS1 DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 80,000, 
+                                                    CERTIFICACION: 80,000, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2601690    ";grp1_clk(27)'>
+                                </td>
+	
+                                <td align="left">
+                                    2601690: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN JR: ALMENDROS 1-5, CIPRECES 1-6 C.SHOWIN 1-2 VILCOS5-7 PJ: S/N CALLE 1, QUINUALES, SAN DIEGO, ROBLES2 ROSALES1-2 NOGALES CLAVELES, GLADIOLOS CORAZON DE JESUS, NISPEROS4, JASMINES LAS AZUCENAS, MANGOS1 DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    80,000
+                                </td>
+                                <td>
+                                    80,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2601690&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr28" onclick='kCod="2602522";tr_clk(28, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl29_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2602522/0/25000/25000/25000/25000/25000/25000"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE ESPACIOS PUBLICOS VERDES EN LA AV. UNIVERSITARIA DESDE HUERTO UNHEVAL HASTA ANDABANBA MARGEN IZQUIERDO DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 25,000, 
+                                                    CERTIFICACION: 25,000, 
+                                                    COMPROMISO ANUAL: 25,000, 
+                                                    COMPROMISO MENSUAL: 25,000
+                                                    DEVENGADO: 25,000
+                                                    GIRADO: 25,000
+                                                    PORCENTAJE AVANCE: 100.0"
+                                        onclick='kCod = "2602522    ";grp1_clk(28)'>
+                                </td>
+	
+                                <td align="left">
+                                    2602522: MEJORAMIENTO DEL SERVICIO DE ESPACIOS PUBLICOS VERDES EN LA AV. UNIVERSITARIA DESDE HUERTO UNHEVAL HASTA ANDABANBA MARGEN IZQUIERDO DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2602522&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr29" onclick='kCod="2602861";tr_clk(29, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl30_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2602861/0/387742/383241.12/383241.12/383241.12/372822.12/383241.12"
+                                        aria-label="CREACION DEL SERVICIO DE GESTION DE TRANSITO URBANO EN REDUCTORES DE VELOCIDAD, SEMAFOROS, SEÑALIZACION EN LA AV. JUAN VELASCO, PUENTE HUANCACHUPA, PITUMAMA Y ANDABAMBA, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 387,742, 
+                                                    CERTIFICACION: 383,241, 
+                                                    COMPROMISO ANUAL: 383,241, 
+                                                    COMPROMISO MENSUAL: 383,241
+                                                    DEVENGADO: 383,241
+                                                    GIRADO: 372,822
+                                                    PORCENTAJE AVANCE: 98.8"
+                                        onclick='kCod = "2602861    ";grp1_clk(29)'>
+                                </td>
+	
+                                <td align="left">
+                                    2602861: CREACION DEL SERVICIO DE GESTION DE TRANSITO URBANO EN REDUCTORES DE VELOCIDAD, SEMAFOROS, SEÑALIZACION EN LA AV. JUAN VELASCO, PUENTE HUANCACHUPA, PITUMAMA Y ANDABAMBA, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    387,742
+                                </td>
+                                <td>
+                                    383,241
+                                </td>
+                                <td>
+                                    383,241
+                                </td>
+                                <td>
+                                    383,241
+                                </td>
+                                <td>
+                                    383,241
+                                </td>
+                                <td>
+                                    372,822
+                                </td>
+                                <td>&nbsp;
+                                    98.8
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2602861&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr30" onclick='kCod="2604941";tr_clk(30, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl31_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2604941/0/44000/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN EL PASAJE LOS NOGALES, LOS PINOS, SAN EULALIO, JR PRIMAVERA, JR SAN FAUSTO 1,2 Y 3 CUADRA Y JIRON LOS CLAVELES DE LA LOCALIDAD DE CAYHUAYNA ALTA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 44,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2604941    ";grp1_clk(30)'>
+                                </td>
+	
+                                <td align="left">
+                                    2604941: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN EL PASAJE LOS NOGALES, LOS PINOS, SAN EULALIO, JR PRIMAVERA, JR SAN FAUSTO 1,2 Y 3 CUADRA Y JIRON LOS CLAVELES DE LA LOCALIDAD DE CAYHUAYNA ALTA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    44,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2604941&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr31" onclick='kCod="2605072";tr_clk(31, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl32_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2605072/0/85000/0/0/0/0/0"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR. SAN JUAN, JR HORACIO ZEVALLOS, JR LAS GARDENIAS Y PASAJE LOS FRUTALES EN LA LOCALIDAD DE CAYHUAYNA ALTA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 85,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2605072    ";grp1_clk(31)'>
+                                </td>
+	
+                                <td align="left">
+                                    2605072: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATONAL DEL JR. SAN JUAN, JR HORACIO ZEVALLOS, JR LAS GARDENIAS Y PASAJE LOS FRUTALES EN LA LOCALIDAD DE CAYHUAYNA ALTA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    85,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2605072&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr32" onclick='kCod="2606027";tr_clk(32, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl33_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2606027/0/35000/0/0/0/0/0"
+                                        aria-label="CREACION DE LOS SERVICIOS PUBLICOS DE INTEGRACION ECONOMICA Y SOCIAL EN LA PARCELA 99, CAYHUAYNA ALTA, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 35,000, 
+                                                    CERTIFICACION: 0, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2606027    ";grp1_clk(32)'>
+                                </td>
+	
+                                <td align="left">
+                                    2606027: CREACION DE LOS SERVICIOS PUBLICOS DE INTEGRACION ECONOMICA Y SOCIAL EN LA PARCELA 99, CAYHUAYNA ALTA, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    35,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2606027&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr33" onclick='kCod="2606611";tr_clk(33, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl34_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2606611/0/39500/39500/39500/15800/15800/39500"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE PROVISION DE AGUA PARA RIEGO EN HUAYANAY DEL CASERIO DE CANCHAPARAN DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 39,500, 
+                                                    CERTIFICACION: 39,500, 
+                                                    COMPROMISO ANUAL: 39,500, 
+                                                    COMPROMISO MENSUAL: 39,500
+                                                    DEVENGADO: 15,800
+                                                    GIRADO: 15,800
+                                                    PORCENTAJE AVANCE: 40.0"
+                                        onclick='kCod = "2606611    ";grp1_clk(33)'>
+                                </td>
+	
+                                <td align="left">
+                                    2606611: MEJORAMIENTO DEL SERVICIO DE PROVISION DE AGUA PARA RIEGO EN HUAYANAY DEL CASERIO DE CANCHAPARAN DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    39,500
+                                </td>
+                                <td>
+                                    39,500
+                                </td>
+                                <td>
+                                    39,500
+                                </td>
+                                <td>
+                                    39,500
+                                </td>
+                                <td>
+                                    15,800
+                                </td>
+                                <td>
+                                    15,800
+                                </td>
+                                <td>&nbsp;
+                                    40.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2606611&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr34" onclick='kCod="2608175";tr_clk(34, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl35_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2608175/0/85000/31600/31600/31600/31600/79000"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE PROVISION DE AGUA PARA RIEGO EN CHUCHULLGUY DEL CASERIO DE VILLA HUANCAN, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 85,000, 
+                                                    CERTIFICACION: 79,000, 
+                                                    COMPROMISO ANUAL: 31,600, 
+                                                    COMPROMISO MENSUAL: 31,600
+                                                    DEVENGADO: 31,600
+                                                    GIRADO: 31,600
+                                                    PORCENTAJE AVANCE: 37.2"
+                                        onclick='kCod = "2608175    ";grp1_clk(34)'>
+                                </td>
+	
+                                <td align="left">
+                                    2608175: MEJORAMIENTO DEL SERVICIO DE PROVISION DE AGUA PARA RIEGO EN CHUCHULLGUY DEL CASERIO DE VILLA HUANCAN, DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    85,000
+                                </td>
+                                <td>
+                                    79,000
+                                </td>
+                                <td>
+                                    31,600
+                                </td>
+                                <td>
+                                    31,600
+                                </td>
+                                <td>
+                                    31,600
+                                </td>
+                                <td>
+                                    31,600
+                                </td>
+                                <td>&nbsp;
+                                    37.2
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2608175&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr35" onclick='kCod="2620476";tr_clk(35, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl36_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2620476/0/30000/30000/30000/30000/30000/30000"
+                                        aria-label="CREACION DEL SERVICIOS DE ESPACIOS PUBLICOS URBANOS EN PARQUE INFANTIL Y RECREATIVA EN LA URBANIZACION LOS PINOS, CAYHUAYNA BAJA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 30,000, 
+                                                    CERTIFICACION: 30,000, 
+                                                    COMPROMISO ANUAL: 30,000, 
+                                                    COMPROMISO MENSUAL: 30,000
+                                                    DEVENGADO: 30,000
+                                                    GIRADO: 30,000
+                                                    PORCENTAJE AVANCE: 100.0"
+                                        onclick='kCod = "2620476    ";grp1_clk(35)'>
+                                </td>
+	
+                                <td align="left">
+                                    2620476: CREACION DEL SERVICIOS DE ESPACIOS PUBLICOS URBANOS EN PARQUE INFANTIL Y RECREATIVA EN LA URBANIZACION LOS PINOS, CAYHUAYNA BAJA DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>
+                                    30,000
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2620476&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr36" onclick='kCod="2625307";tr_clk(36, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl37_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2625307/0/25000/25000/25000/25000/0/25000"
+                                        aria-label="CREACION DEL SERVICIO DE MOVILIDAD URBANA EN ESCALINATAS EN EL PASAJE SAN JORGE, JR. LOS LIBERTADORES Y EL PASAJE SAN MIGUEL, ARCORRAGRA, DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 25,000, 
+                                                    CERTIFICACION: 25,000, 
+                                                    COMPROMISO ANUAL: 25,000, 
+                                                    COMPROMISO MENSUAL: 25,000
+                                                    DEVENGADO: 25,000
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 100.0"
+                                        onclick='kCod = "2625307    ";grp1_clk(36)'>
+                                </td>
+	
+                                <td align="left">
+                                    2625307: CREACION DEL SERVICIO DE MOVILIDAD URBANA EN ESCALINATAS EN EL PASAJE SAN JORGE, JR. LOS LIBERTADORES Y EL PASAJE SAN MIGUEL, ARCORRAGRA, DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    25,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    100.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2625307&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            <tr class="alt" id="tr37" onclick='kCod="2630470";tr_clk(37, this)'
+                                onmouseover="tr_over(this)" onmouseout="tr_out(this)">
+                                <td id="ctl00_CPH1_RptData_ctl38_TD0" align="center" valign="top" rowspan="2">
+                                    <input type="radio" name="grp1" value="2630470/0/40000/0/0/0/0/40000"
+                                        aria-label="MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATRONAL DE LA CALLE LOS PAUJILES, CALLE SIN NOMBRE Nº 113 (552), CALLE SIN NOMBRE Nº 112 (551), CALLE SIN NOMBRE, DE CAYHUAYNA ALTA DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO, 
+                                                    PIA: 0, 
+                                                    PIM: 40,000, 
+                                                    CERTIFICACION: 40,000, 
+                                                    COMPROMISO ANUAL: 0, 
+                                                    COMPROMISO MENSUAL: 0
+                                                    DEVENGADO: 0
+                                                    GIRADO: 0
+                                                    PORCENTAJE AVANCE: 0.0"
+                                        onclick='kCod = "2630470    ";grp1_clk(37)'>
+                                </td>
+	
+                                <td align="left">
+                                    2630470: MEJORAMIENTO DEL SERVICIO DE MOVILIDAD URBANA EN TRANSITABILIDAD VEHICULAR Y PEATRONAL DE LA CALLE LOS PAUJILES, CALLE SIN NOMBRE Nº 113 (552), CALLE SIN NOMBRE Nº 112 (551), CALLE SIN NOMBRE, DE CAYHUAYNA ALTA DEL DISTRITO DE PILLCO MARCA DE LA PROVINCIA DE HUANUCO DEL DEPARTAMENTO DE HUANUCO
+                                    
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    40,000
+                                </td>
+                                <td>
+                                    40,000
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>
+                                    0
+                                </td>
+                                <td>&nbsp;
+                                    0.0
+                                </td>
+                            </tr>
+                            <tr class="More">
+								<td colspan="9"><a href="javascript:ShowFichaProy(&#39;2630470&#39;)">Sistema de Seguimiento de Inversiones SSI</a>&nbsp;</td>
+							</tr>
+                        
+                            </table>
+                        
+                    
+                </div>
+            
+</div>
+        <div id="ctl00_CPH1_UpdateProgress1" style="display:none;">
+	
+                <table style="border-collapse: collapse; margin-left: auto; margin-right: auto; margin-top: 30px; background-color: #ffffff"
+                    border="0" cellpadding="2" cellspacing="0">
+                    <tr>
+                        <td align="center" style="border: solid 1px #eeeeee">
+                            <img src='../Images/indicator.gif' alt='' />
+                        </td>
+                        <td align="center" style="font-size: 8pt; color: #b95c00; border: solid 1px #eeeeee; width: 80px">Cargando...
+                        </td>
+                    </tr>
+                </table>
+            
+</div>
+        
+        
+        
+        <div class="PnlNotes">
+            <p class="hd">
+                Notas
+            </p>
+            <div class="bd">
+                <ul>
+                    <li>Los montos están en <b>Soles.</b></li>
+                    <li><b>La columna Avance %</b> representa la razón del Devengado entre el PIM, expresado
+                        en porcentajes.</li>
+                    <li>A partir del 2007 se comienza a incluir información de los <b>Gobiernos Locales</b>.
+                        <a href='javascript:window.open("../Nota01.htm", "_notes", "status=no,toolbar=no,menubar=no,width=400,height=350,scrollbars=yes,top=50,left=50"); void 0;'>Ver más detalles</a>.</li>
+                    <li>A partir del 2012 el programa cambia de denominación por el de división funcional,
+                        y el subprograma por el de grupo funcional.</li>
+                    <li>La información se actualiza diariamente. <b>Última actualización:
+                        <span id="ctl00_CPH1_LblLastUpdate">16 de abril de 2024.</span>
+                    </b></li>
+                </ul>
+            </div>
+            <p class="ft">
+                <a href='javascript:window.open("../Nota01.htm", "_notes", "status=no,toolbar=no,menubar=no,width=400,height=350,scrollbars=yes,top=50,left=50"); void 0;'>Sobre la información presentada</a>&nbsp;&nbsp;|&nbsp; <a href='javascript:window.open("../Estadisticas/Estadisticas.aspx", "_estadisticas", "status=no,toolbar=no,menubar=no,width=550,height=420,scrollbars=no,top=50,left=50"); void 0;'>Estadísticas de uso</a>
+            </p>
+        </div>
+        <br />
+    </div>
+    <div id="DivProgress" style="display: none; border: solid 0px #dddddd;">
+        <table style="border-collapse: collapse; margin-left: auto; margin-right: auto; margin-top: 50px; background-color: #ffffff"
+            border="0" cellpadding="2" cellspacing="0">
+            <tr>
+                <td align="center" style="border: solid 1px #eeeeee">
+                    <img src='../Images/indicator.gif' alt='' />
+                </td>
+                <td align="center" style="font-size: 8pt; color: #b95c00; border: solid 1px #eeeeee; width: 80px">Cargando...
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="ctl00_CPH1_PnlTip" class="PopupTip">
+	
+        <div id="ctl00_CPH1_PnlDynaTip">
+		
+        
+	</div>
+    
+</div>
+    <div id="ctl00_CPH1_PnlNote" class="PopupTip" style="background-color:#FDF6AA;width:290px;">
+	
+        <div id="ctl00_CPH1_PnlDynaNote" style="background-color:#FDF6AA;">
+		
+        
+	</div>
+    
+</div>
+    <div id="ctl00_CPH1_PnlQuien" class="PopupDimBtn">
+	
+        <p class="hd">
+            ¿Quién Gasta?
+        </p>
+        <p class="bd">
+            Implementar definición ...
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlParaQue" class="PopupDimBtn">
+	
+        <p class="hd">
+            ¿Para qué se Gasta?
+        </p>
+        <p class="bd">
+            Implementar definición ...
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlConQue" class="PopupDimBtn">
+	
+        <p class="hd">
+            ¿Con qué se Financian los Gastos?
+        </p>
+        <p class="bd">
+            Implementar definicion ...
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlEnQue" class="PopupDimBtn">
+	
+        <p class="hd">
+            ¿En qué se Gasta?
+        </p>
+        <p class="bd">
+            Implementar definicion ...
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlDonde" class="PopupDimBtn">
+	
+        <p class="hd">
+            ¿Dónde se Gasta?
+        </p>
+        <p class="bd">
+            Implementar definicion ...
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlCuando" class="PopupDimBtn">
+	
+        <p class="hd">
+            ¿Cuándo se hizo el Gasto?
+        </p>
+        <p class="bd">
+            Implementar definicion ...
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlPIA" class="PopupDimBtn">
+	
+        <p class="hd">
+            PIA
+        </p>
+        <p class="bd">
+            Presupuesto inicial de la entidad pública aprobado por su respectivo titular con
+            cargo a los créditos presupuestarios establecidos en la Ley Anual de Presupuesto
+            del Sector Público para el año fiscal respectivo. En el caso de las Empresas y Organismos
+            Públicos Descentralizados de los Gobiernos Regionales y Gobiernos Locales, los créditos
+            presupuestarios son establecidos mediante Decreto Supremo.
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlPIM" class="PopupDimBtn">
+	
+        <p class="hd">
+            PIM
+        </p>
+        <p class="bd">
+            Presupuesto actualizado de la entidad pública a consecuencia de las modificaciones
+            presupuestarias, tanto a nivel institucional como a nivel funcional programático,
+            efectuadas durante el año fiscal, a partir del PIA.
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlCertificacion" class="PopupDimBtn">
+	
+        <p class="hd">
+            Certificación
+        </p>
+        <p class="bd">
+            La certificación de crédito presupuestario constituye un acto de administración
+            cuya finalidad es garantizar que se cuenta con el crédito presupuestario disponible
+            y libre de afectación, para comprometer un gasto con cargo al presupuesto institucional
+            autorizado para el año fiscal respectivo, en función a la PCA, previo cumplimiento
+            de las disposiciones legales vigentes que regulen el objeto materia del compromiso.
+            Dicha certificación implica la reserva del crédito presupuestario, hasta el perfeccionamiento
+            del compromiso y la realización del correspondiente registro presupuestario.
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlCompAnual" class="PopupDimBtn" style="width: 240px">
+	
+        <p class="hd">
+            Compromiso Anual
+        </p>
+        <p class="bd">
+            Acto mediante el cual se acuerda, luego del cumplimiento de los trámites legalmente
+            establecidos, la realización de gastos previamente aprobados, por un importe determinado
+            o determinable, que afectan total o parcialmente los créditos presupuestarios, en
+            el marco de los presupuestos aprobados y las modificaciones presupuestarias realizadas.
+            El compromiso se efectúa con posterioridad a la generación de la obligación nacida
+            de acuerdo a Ley, Contrato o Convenio. El compromiso debe afectarse preventivamente
+            a la correspondiente cadena de gasto, reduciendo su importe del saldo disponible
+            del crédito presupuestario, a través del respectivo documento oficial.
+        </p>
+        <p class="bd">
+            El compromiso es realizado dentro del marco de los créditos presupuestarios aprobados
+            en el presupuesto institucional del pliego para el año fiscal, con sujeción al monto
+            del PCA, por el monto total anualizado de la obligación.
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    <div id="ctl00_CPH1_PnlEjecucion" class="PopupDimBtn">
+	
+        <p class="hd">
+            EJECUCION DEL GASTO
+        </p>
+        <p class="bd">
+            <b>Atención de Compromiso Mensual</b><br />
+            Fase del ciclo del gasto a través del cual la autoridad competente afecta mensualmente
+            su presupuesto institucional, por el total o la parte correspondiente del gasto
+            que deba efectuar la Entidad dentro del año fiscal.
+        </p>
+        <p class="bd">
+            El Compromiso no puede exceder los montos aprobados en las Asignaciones Trimestrales
+            ni los autorizados en los respectivos Calendarios de Compromisos.
+        </p>
+        <p class="bd">
+            El Compromiso no implica obligación de pago.<br />
+            <br />
+            <b>Devengado</b><br />
+            Fase del ciclo del gasto donde se registra la obligación de pago, como consecuencia
+            del respectivo compromiso contraído.<br />
+            <br />
+            <b>Girado</b><br />
+            Fase del ciclo del gasto donde se cancela total o parcialmente la obligación devengada,
+            mediante el giro de cheques, emisión de carta orden, notas contables y/o documentos
+            cancelatorios del Tesoro Público.
+        </p>
+        <p class="ft">
+        </p>
+    
+</div>
+    
+    
+    
+    
+    
+    
+    <script language="javascript" type="text/javascript">
+        var prm;
+        if (Sys.WebForms) {
+            prm = Sys.WebForms.PageRequestManager.getInstance();
+        }
+        if (prm != null) {
+
+            Sys.WebForms.PageRequestManager.getInstance().add_initializeRequest(InitializeRequest);
+            Sys.WebForms.PageRequestManager.getInstance().add_pageLoading(PageLoadingHandler);
+            Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(PageLoadedHandler);
+        }
+
+        function InitializeRequest(sender, args) {
+            document.getElementById("PnlData").style.display = "none";
+        }
+
+        function PageLoadingHandler(sender, args) {
+            document.getElementById("PnlData").style.display = "";
+        }
+
+        function PageLoadedHandler(sender, args) {
+            selectedRowIndex = -1;
+            SetActiveRow(selectedRowIndex, null);
+            kCod = null;
+
+            var dataItems = args.get_dataItems();
+            var label1 = "Label1";
+
+            var label1Key;
+            for (var item in dataItems) {
+                if (item.indexOf(label1) > 0) {
+                    label1Key = item;
+                    break;
+                }
+            }
+            if (label1Key != null) {
+                exportUrl = dataItems[label1Key];
+            }
+
+            var label2 = "Label2";
+            var label2Key;
+            for (var item in dataItems) {
+                if (item.indexOf(label2) > 0) {
+                    label2Key = item;
+                    break;
+                }
+            }
+            if (label2Key != null) {
+                graphicUrl = dataItems[label2Key];
+            }
+
+            var label3 = "Label3";
+            var label3Key;
+            for (var item in dataItems) {
+                if (item.indexOf(label3) > 0) {
+                    label3Key = item;
+                    break;
+                }
+            }
+            if (label3Key != null) {
+                rowCount = dataItems[label3Key];
+            }
+        }
+
+    </script>
+
+        </div>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+WebForm_AutoFocus('ctl00_CPH1_TxtSearch');Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"ctl00_CPH1_PnlPIA","Position":4,"dynamicServicePath":"/transparencia/Navegador/Navegar_7.aspx","id":"ctl00_CPH1_Mt0_PopupPIA"}, null, null, $get("ctl00_CPH1_Mt0_ImgGlobePIA"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"ctl00_CPH1_PnlPIM","Position":4,"dynamicServicePath":"/transparencia/Navegador/Navegar_7.aspx","id":"ctl00_CPH1_Mt0_PopupPIM"}, null, null, $get("ctl00_CPH1_Mt0_ImgGlobePIM"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"ctl00_CPH1_PnlCertificacion","Position":4,"dynamicServicePath":"/transparencia/Navegador/Navegar_7.aspx","id":"ctl00_CPH1_Mt0_PopupCertificacion"}, null, null, $get("ctl00_CPH1_Mt0_ImgGlobeCertificacion"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"PopupControlID":"ctl00_CPH1_PnlCompAnual","Position":4,"dynamicServicePath":"/transparencia/Navegador/Navegar_7.aspx","id":"ctl00_CPH1_Mt0_PopupCompAnual"}, null, null, $get("ctl00_CPH1_Mt0_ImgGlobeCompAnual"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.PopupControlBehavior, {"OffsetX":-253,"PopupControlID":"ctl00_CPH1_PnlEjecucion","Position":4,"dynamicServicePath":"/transparencia/Navegador/Navegar_7.aspx","id":"ctl00_CPH1_Mt0_PopupEjecucion"}, null, null, $get("ctl00_CPH1_Mt0_ImgGlobeEjecucion"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"ctl00_CPH1_UpdatePanel1","displayAfter":200,"dynamicLayout":true}, null, null, $get("ctl00_CPH1_UpdateProgress1"));
+});
+//]]>
+</script>
+</form>
+
+
+</body>
+</html>
